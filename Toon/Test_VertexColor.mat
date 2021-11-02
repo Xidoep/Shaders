@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Test_VertexColor
+  m_Shader: {fileID: -6465566751694194690, guid: 55fb34ba76ad2cf4dadbd69df40cf102, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Base:
+        m_Texture: {fileID: -8709765812780517548, guid: 852ea728838429945a72d6f2659353ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Black:
+        m_Texture: {fileID: -8709765812780517548, guid: 852ea728838429945a72d6f2659353ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - ColorB:
+        m_Texture: {fileID: 2800000, guid: e36fc65f5c5c2a848ac8d53508bca9f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - ColorG:
+        m_Texture: {fileID: 2800000, guid: 7263e4515560f2c40a22d62722266a1e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - ColorR:
+        m_Texture: {fileID: 2800000, guid: 4409606134862684395a3878156c40f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightB:
+        m_Texture: {fileID: 2800000, guid: e36fc65f5c5c2a848ac8d53508bca9f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightBase:
+        m_Texture: {fileID: 2800000, guid: d161dc9e32334be4aa312472d176579e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightBlack:
+        m_Texture: {fileID: 2800000, guid: 991f90a886d88d3428e54f4dcd5dbab8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightG:
+        m_Texture: {fileID: 2800000, guid: 7263e4515560f2c40a22d62722266a1e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightR:
+        m_Texture: {fileID: 2800000, guid: 2de9e564428c03a44b67f75edbd8dc2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - HeightWhite:
+        m_Texture: {fileID: 2800000, guid: 588d2fa3cfda4854ba37390a3f990e65, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NormalB:
+        m_Texture: {fileID: 2800000, guid: 2de9e564428c03a44b67f75edbd8dc2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NormalBase:
+        m_Texture: {fileID: 2800000, guid: e36fc65f5c5c2a848ac8d53508bca9f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NormalG:
+        m_Texture: {fileID: 2800000, guid: cb9ca02228cb6e245aca210d12b39bb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NormalR:
+        m_Texture: {fileID: 2800000, guid: 4bc80f01c58703d4fa01230a1ed8e3f9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - White:
+        m_Texture: {fileID: 2800000, guid: 3b5e5b5b58ebb464fae9e72646816393, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0477a488c72f4daaa3d527b324792390_Texture_1:
+        m_Texture: {fileID: 2800000, guid: cb9ca02228cb6e245aca210d12b39bb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_4d0e4f6c522f41d28fcebddb712d4608_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d161dc9e32334be4aa312472d176579e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Brillo_intensitat: 0.16
+    - Brillo_tamany: 0.54
+    - Desviacio: -0.45
+    - Saturacio: 3
+    m_Colors: []
+  m_BuildTextureStacks: []
