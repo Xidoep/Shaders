@@ -207,6 +207,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "0d645baa15074e20986e868f0ce4440a",
+    "m_Id": -1553919730,
+    "m_DisplayName": "Sombres pintades multiplicador",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Sombres_pintades_multiplicador",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "0f2bc0705dc848fa9dee512745bd5d23",
     "m_Id": -305853822,
@@ -277,6 +292,15 @@
             "m_Id": "0f2bc0705dc848fa9dee512745bd5d23"
         },
         {
+            "m_Id": "b2cff2ef8b274cc7a70796a90a27fdcb"
+        },
+        {
+            "m_Id": "da822b2990664e24b7aed23e7739a02e"
+        },
+        {
+            "m_Id": "0d645baa15074e20986e868f0ce4440a"
+        },
+        {
             "m_Id": "d6ae861b88124a6fab65b331ebe614e6"
         }
     ],
@@ -292,13 +316,19 @@
         "dd12bd56-4909-4a5d-9cc5-1eaa7fa9c836",
         "829c472a-ab59-4d0d-b51d-c4260a924ea5",
         "ea04e447-31ae-41c2-bb1f-8e62d0f364e5",
-        "ab6a1664-6185-4893-8041-ec46bf7bd7a3"
+        "ab6a1664-6185-4893-8041-ec46bf7bd7a3",
+        "f88f220e-d4f5-47fc-80d5-706ae154e2da",
+        "7dad5680-9b9f-45ad-af32-a717a3f3c415",
+        "eb695a17-e308-4bf8-a586-ab25f79feae1"
     ],
     "m_PropertyIds": [
         -1977878723,
         -305853822,
         1437246816,
-        653221460
+        653221460,
+        1551525160,
+        1093800760,
+        -1553919730
     ]
 }
 
@@ -668,6 +698,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "b2cff2ef8b274cc7a70796a90a27fdcb",
+    "m_Id": 1551525160,
+    "m_DisplayName": "Brillo intensitat",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Brillo_intensitat",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget",
     "m_ObjectId": "b30f0f6ff32e4e9489ea83698b5f5f30",
     "m_ActiveSubTarget": {
@@ -913,6 +958,21 @@
         "y": 0.0,
         "z": 0.0
     },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "da822b2990664e24b7aed23e7739a02e",
+    "m_Id": 1093800760,
+    "m_DisplayName": "Brillo tamany",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Brillo_tamany",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 

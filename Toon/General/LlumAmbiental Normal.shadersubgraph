@@ -10,6 +10,9 @@
             "m_Id": "a22c5439a53f4ebfac68560295c8376b"
         },
         {
+            "m_Id": "b14bad5b571c4719adacda4ced16e0ef"
+        },
+        {
             "m_Id": "9e8883c0fb2e4de8ab1c7d43d109df39"
         }
     ],
@@ -47,6 +50,9 @@
         },
         {
             "m_Id": "7e1b0f595065478bbf48f2c6574a0458"
+        },
+        {
+            "m_Id": "ca8c8bd577b945c19bfa3c9f2577c803"
         }
     ],
     "m_GroupDatas": [
@@ -210,6 +216,20 @@
                     "m_Id": "6170750eab084535ad287d866f0230dd"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "ca8c8bd577b945c19bfa3c9f2577c803"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "7bab86bcb68f433f920ea3f6c316a646"
+                },
+                "m_SlotId": 1337432584
             }
         },
         {
@@ -449,6 +469,21 @@
         "Y",
         "Z"
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "3bcfd19764a9476f8379894c2eacedff",
+    "m_Id": 1337432584,
+    "m_DisplayName": "Sombres pintades multiplicador",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Sombres_pintades_multiplicador",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -821,6 +856,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "7366d137232c43c091ca7be49198bf07",
+    "m_Id": 0,
+    "m_DisplayName": "Sombres pintades multiplicador",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "756e2eda8b8c4969aba6470f73d0338a",
     "m_Title": "Mescla llums amb color base",
@@ -868,10 +918,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1265.0,
+            "x": -1343.0001220703125,
             "y": 290.0,
-            "width": 266.0,
-            "height": 302.0
+            "width": 336.0,
+            "height": 326.0
         }
     },
     "m_Slots": [
@@ -880,6 +930,9 @@
         },
         {
             "m_Id": "c1f41db114bc4e528411eb0d0a5ffb6e"
+        },
+        {
+            "m_Id": "3bcfd19764a9476f8379894c2eacedff"
         },
         {
             "m_Id": "4d6839468da7436abe581dd2b724f658"
@@ -901,14 +954,16 @@
         "ce203996-ef60-4426-8b6c-465cded53ab4",
         "8fe4c0e3-a452-4c6a-81b4-deef3fb28ec9",
         "54faded4-06b4-4e77-a21c-bcc429745357",
-        "9e466abe-e742-4193-9cd9-db92293f00fb"
+        "9e466abe-e742-4193-9cd9-db92293f00fb",
+        "9e74d73b-92c3-4d01-b114-438021366632"
     ],
     "m_PropertyIds": [
         144896406,
         1732279556,
         -172585920,
         -296840972,
-        -1576784938
+        -1576784938,
+        1337432584
     ]
 }
 
@@ -924,8 +979,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1430.0,
-            "y": 350.0,
+            "x": -1508.0001220703125,
+            "y": 349.9999694824219,
             "width": 129.0,
             "height": 34.0
         }
@@ -1138,6 +1193,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "b14bad5b571c4719adacda4ced16e0ef",
+    "m_Guid": {
+        "m_GuidSerialized": "835042aa-2ba5-4a68-956c-c75dc58d7f83"
+    },
+    "m_Name": "Sombres pintades multiplicador",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sombres pintades multiplicador",
+    "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 1.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "b616955331ea471e92228af43b5c030f",
@@ -1223,10 +1303,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "c1f41db114bc4e528411eb0d0a5ffb6e",
     "m_Id": -172585920,
-    "m_DisplayName": "Height",
+    "m_DisplayName": "Normal",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "Height",
+    "m_ShaderOutputName": "Normal",
     "m_StageCapability": 2,
     "m_BareResource": false,
     "m_Texture": {
@@ -1234,6 +1314,41 @@
         "m_Guid": ""
     },
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ca8c8bd577b945c19bfa3c9f2577c803",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1629.0001220703125,
+            "y": 403.9999694824219,
+            "width": 243.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "7366d137232c43c091ca7be49198bf07"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "b14bad5b571c4719adacda4ced16e0ef"
+    }
 }
 
 {
@@ -1299,7 +1414,7 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1474.0,
+            "x": -1552.0001220703125,
             "y": 307.0,
             "width": 173.0,
             "height": 34.0

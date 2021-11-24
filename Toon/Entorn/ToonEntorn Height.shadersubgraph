@@ -17,6 +17,9 @@
         },
         {
             "m_Id": "b1edc7ae435c4dd5b39581e2ab829462"
+        },
+        {
+            "m_Id": "ce5f2ca8b6164ed7aeb0bfa81313a563"
         }
     ],
     "m_Keywords": [],
@@ -74,6 +77,9 @@
         },
         {
             "m_Id": "9c20da0f4f87432fac49fa71ca1e8070"
+        },
+        {
+            "m_Id": "35397b21703746efb87d68af5ad8b921"
         }
     ],
     "m_GroupDatas": [],
@@ -175,6 +181,20 @@
                     "m_Id": "f501088945fb4e3eb64705cf882f48dc"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "35397b21703746efb87d68af5ad8b921"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "701f9658d94a4aedb1c59890a364a2d4"
+                },
+                "m_SlotId": -892683401
             }
         },
         {
@@ -462,8 +482,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 581.0,
-            "y": -72.00001525878906,
+            "x": 606.0,
+            "y": -93.0,
             "width": 111.00000762939453,
             "height": 34.0
         }
@@ -807,6 +827,41 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "35397b21703746efb87d68af5ad8b921",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 474.0,
+            "y": -31.000001907348634,
+            "width": 243.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "c5c804e6cbf14b24a97cc9ef8c9c33ac"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "ce5f2ca8b6164ed7aeb0bfa81313a563"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "376aa24988364eae81c8599c11dccd37",
     "m_Group": {
         "m_Id": ""
@@ -1107,6 +1162,9 @@
             "m_Id": "4e41f527b7844407a6ca6969e9d0127f"
         },
         {
+            "m_Id": "a5fabf925eb8400da9606ed16829dbbd"
+        },
+        {
             "m_Id": "3a64019ddf0c484087215fb5cfb1b27a"
         }
     ],
@@ -1122,13 +1180,15 @@
         "4aa8330f-9539-4c72-acb3-ffc3949729e6",
         "9ee4ee7c-1c03-40ec-abf8-13c2ec9cb3f0",
         "1ae9633d-2921-4ea7-8487-0c0c68523b44",
-        "b05e3167-0576-4a2e-b73a-d1ee279b2d52"
+        "b05e3167-0576-4a2e-b73a-d1ee279b2d52",
+        "b9b5f30a-cf7f-48e0-99be-bc2c0691ec9d"
     ],
     "m_PropertyIds": [
         546406299,
         -1847087520,
         1070083550,
-        1680374555
+        1680374555,
+        -892683401
     ]
 }
 
@@ -1428,6 +1488,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a5fabf925eb8400da9606ed16829dbbd",
+    "m_Id": -892683401,
+    "m_DisplayName": "Sombres pintades multiplicador",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Sombres_pintades_multiplicador",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "b1edc7ae435c4dd5b39581e2ab829462",
@@ -1532,6 +1607,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "c5c804e6cbf14b24a97cc9ef8c9c33ac",
+    "m_Id": 0,
+    "m_DisplayName": "Sombres pintades multiplicador",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
     "m_ObjectId": "cda0f5f4529a44a38578ae66c2a21ede",
     "m_Group": {
@@ -1572,6 +1662,31 @@
         -232494268,
         -1819509607
     ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "ce5f2ca8b6164ed7aeb0bfa81313a563",
+    "m_Guid": {
+        "m_GuidSerialized": "fc4bc5a8-fb36-4b26-8741-13812a08a5f6"
+    },
+    "m_Name": "Sombres pintades multiplicador",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sombres pintades multiplicador",
+    "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 1.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
