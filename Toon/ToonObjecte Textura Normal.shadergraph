@@ -4,6 +4,12 @@
     "m_ObjectId": "2a3bbab647d4482ea3c32a3db4da6f9e",
     "m_Properties": [
         {
+            "m_Id": "f15c05c4e8624e2c9888079ff48a9a6a"
+        },
+        {
+            "m_Id": "f2319be1b77c4bd9998affbb7545b274"
+        },
+        {
             "m_Id": "6591d66fcabb44cd8bf14c9ee85abafd"
         },
         {
@@ -13,10 +19,7 @@
             "m_Id": "5cf7969092a2405cae3778f8e80fb557"
         },
         {
-            "m_Id": "f2319be1b77c4bd9998affbb7545b274"
-        },
-        {
-            "m_Id": "f15c05c4e8624e2c9888079ff48a9a6a"
+            "m_Id": "851cc5c7381146ecb06ba87d4e27d1bd"
         }
     ],
     "m_Keywords": [],
@@ -62,6 +65,9 @@
         },
         {
             "m_Id": "0b8a626542c9479b88739b76f8777283"
+        },
+        {
+            "m_Id": "601797f55bce44e8bfe0fbf4f7ca8cb0"
         }
     ],
     "m_GroupDatas": [],
@@ -274,9 +280,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -463.0,
-            "y": 284.9999694824219,
-            "width": 129.0,
+            "x": -462.9999694824219,
+            "y": 285.0,
+            "width": 129.00001525878907,
             "height": 34.0
         }
     },
@@ -498,10 +504,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -296.9999694824219,
-            "y": 241.99998474121095,
-            "width": 228.99998474121095,
-            "height": 189.99998474121095
+            "x": -297.0,
+            "y": 242.00003051757813,
+            "width": 229.0,
+            "height": 190.0
         }
     },
     "m_Slots": [
@@ -663,6 +669,41 @@
     },
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "601797f55bce44e8bfe0fbf4f7ca8cb0",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -563.0,
+            "y": 475.0000305175781,
+            "width": 204.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "d6eddada1d6b49649baebe7544fd646c"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "851cc5c7381146ecb06ba87d4e27d1bd"
+    }
 }
 
 {
@@ -850,10 +891,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -746.9999389648438,
-            "y": -11.99999713897705,
-            "width": 183.99998474121095,
-            "height": 252.99998474121095
+            "x": -747.0,
+            "y": -279.0000305175781,
+            "width": 184.0,
+            "height": 253.0
         }
     },
     "m_Slots": [
@@ -891,6 +932,31 @@
     },
     "m_TextureType": 0,
     "m_NormalMapSpace": 0
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "851cc5c7381146ecb06ba87d4e27d1bd",
+    "m_Guid": {
+        "m_GuidSerialized": "2af11d6b-1b8a-4faf-8b0f-adc9042a99dc"
+    },
+    "m_Name": "IntensitatSombraPintada",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "IntensitatSombraPintada",
+    "m_DefaultReferenceName": "IntensitatSombraPintada",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 1,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -1187,8 +1253,8 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -905.0,
-            "y": 0.000005841255187988281,
-            "width": 123.99999237060547,
+            "y": -267.0000305175781,
+            "width": 124.0,
             "height": 34.0
         }
     },
@@ -1277,6 +1343,21 @@
         "y": 0.0,
         "z": 0.0
     },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d6eddada1d6b49649baebe7544fd646c",
+    "m_Id": 0,
+    "m_DisplayName": "IntensitatSombraPintada",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 

@@ -1400,6 +1400,9 @@
             "m_Id": "3d1b376f67994fad9fa1c7a858b4d1d2"
         },
         {
+            "m_Id": "59d6e24b6a424b489e17081dd83f4834"
+        },
+        {
             "m_Id": "91b59040557c4c6a9307c7393d3819f8"
         }
     ],
@@ -1413,11 +1416,13 @@
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"b77c01bca4eeba7498e50c0041a85990\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [
         "5af6bde2-a80c-40b4-b302-9b27e131771d",
-        "558b1519-524c-4893-a0b0-6d5d6191cb04"
+        "558b1519-524c-4893-a0b0-6d5d6191cb04",
+        "0603c959-656c-47fd-83aa-6251645b9977"
     ],
     "m_PropertyIds": [
         1778056523,
-        1791450510
+        1791450510,
+        24088275
     ]
 }
 
@@ -1564,6 +1569,27 @@
         "x": 1714.0,
         "y": -189.0000457763672
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "59d6e24b6a424b489e17081dd83f4834",
+    "m_Id": 24088275,
+    "m_DisplayName": "UV",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UV",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
 }
 
 {

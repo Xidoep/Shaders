@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Test_ColorAmbVariacio
-  m_Shader: {fileID: -6465566751694194690, guid: 4f5967a086040b747bfd2c12498d698f, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 188bc715bd97dac45a81fbf090cd15d1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -19,12 +19,28 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Height:
+        m_Texture: {fileID: 2800000, guid: 3b5e5b5b58ebb464fae9e72646816393, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Normals:
         m_Texture: {fileID: 2800000, guid: 63c28d3d8397ec14c8d9f51e251a1007, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - SombraPintada:
+        m_Texture: {fileID: 2800000, guid: 3b5e5b5b58ebb464fae9e72646816393, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - SombresPintades:
         m_Texture: {fileID: 2800000, guid: 529239097d02f9f42b0ddd436c6fcbb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Textura:
+        m_Texture: {fileID: 2800000, guid: 3b5e5b5b58ebb464fae9e72646816393, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _IluminacioNormal_e01ec69a0d764d5ab55e3bfcefae435b_Normals_2749283396:
@@ -107,6 +123,10 @@ Material:
     m_Floats:
     - Brillo_Intensitat: 2
     - Brillo_Tamany: 0.728
+    - Brillo_intensitat: 0.5
+    - Brillo_tamany: 0.25
+    - Sombres_pintades_multiplicador: 1
     m_Colors:
+    - UV: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 0.44552678, g: 0.5188679, b: 0.3989409, a: 0}
   m_BuildTextureStacks: []
