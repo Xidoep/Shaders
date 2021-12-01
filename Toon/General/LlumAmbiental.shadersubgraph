@@ -5,9 +5,6 @@
     "m_Properties": [
         {
             "m_Id": "78b919a0cc8945b6ac453b52b0c97344"
-        },
-        {
-            "m_Id": "a22c5439a53f4ebfac68560295c8376b"
         }
     ],
     "m_Keywords": [],
@@ -35,9 +32,6 @@
         },
         {
             "m_Id": "0b833a1a9e864316a81517ee80dfbe79"
-        },
-        {
-            "m_Id": "e5f484d4916a4e63ad37a81a3954c44d"
         },
         {
             "m_Id": "3ffff84b03e242c1b7ebcecf65718520"
@@ -190,20 +184,6 @@
                     "m_Id": "6170750eab084535ad287d866f0230dd"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "e5f484d4916a4e63ad37a81a3954c44d"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "3ffff84b03e242c1b7ebcecf65718520"
-                },
-                "m_SlotId": 1732279556
             }
         },
         {
@@ -438,9 +418,6 @@
     },
     "m_Slots": [
         {
-            "m_Id": "975c21636f07454fbb4f09657e6b9d6e"
-        },
-        {
             "m_Id": "4e2d34251346486781ec209640ba907e"
         },
         {
@@ -597,31 +574,6 @@
         "x": -972.0000610351563,
         "y": 113.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "577936b759f64226a095d5d16f4c9d23",
-    "m_Id": 0,
-    "m_DisplayName": "Sombres pintades",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -871,31 +823,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "975c21636f07454fbb4f09657e6b9d6e",
-    "m_Id": 1732279556,
-    "m_DisplayName": "Sombres pintades",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Sombres_pintades",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlendNode",
     "m_ObjectId": "98834307e0e640389f3d7fc0fb7e9beb",
     "m_Group": {
@@ -934,32 +861,6 @@
         "m_SerializableColors": []
     },
     "m_BlendMode": 13
-}
-
-{
-    "m_SGVersion": 3,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
-    "m_ObjectId": "a22c5439a53f4ebfac68560295c8376b",
-    "m_Guid": {
-        "m_GuidSerialized": "9ee4ee7c-1c03-40ec-abf8-13c2ec9cb3f0"
-    },
-    "m_Name": "Sombres pintades",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Sombres pintades",
-    "m_DefaultReferenceName": "Sombres_pintades",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.0
-    },
-    "m_ColorMode": 0
 }
 
 {
@@ -1140,41 +1041,6 @@
         "Y",
         "Z"
     ]
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "e5f484d4916a4e63ad37a81a3954c44d",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1474.0,
-            "y": 327.0000305175781,
-            "width": 173.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "577936b759f64226a095d5d16f4c9d23"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "a22c5439a53f4ebfac68560295c8376b"
-    }
 }
 
 {
