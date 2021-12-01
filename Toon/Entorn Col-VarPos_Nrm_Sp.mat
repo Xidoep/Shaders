@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - SombresPintades:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 356c4f980caf61b4caf8e34b1605af42, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Textura:
@@ -122,13 +122,13 @@ Material:
     m_Ints: []
     m_Floats:
     - Brillo_Intensitat: 2
-    - Brillo_Tamany: 1
+    - Brillo_Tamany: 0.413
     - Brillo_intensitat: 0.5
     - Brillo_tamany: 0.25
-    - SP_multiplicador: 1
+    - SP_multiplicador: 0.98
     - Sombres_pintades_multiplicador: 1
-    - Variacio: 0.2
+    - Variacio: 0.1
     m_Colors:
     - UV: {r: 1, g: 1, b: 0, a: 0}
-    - _Color: {r: 0.44552678, g: 0.5188679, b: 0.3989409, a: 0}
+    - _Color: {r: 0.46848452, g: 0.5176471, b: 0.4, a: 0}
   m_BuildTextureStacks: []
