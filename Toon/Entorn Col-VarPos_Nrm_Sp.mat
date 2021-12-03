@@ -95,6 +95,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SP_Textura:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_5ecdb2735f1146b0aa8d804030afbf54_Texture_1:
         m_Texture: {fileID: 2800000, guid: 0df91f45ee38a6e45a4d01aa250d3b4b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -125,10 +129,30 @@ Material:
     - Brillo_Tamany: 0.413
     - Brillo_intensitat: 0.5
     - Brillo_tamany: 0.25
-    - SP_multiplicador: 0.98
+    - SP_multiplicador: 1
     - Sombres_pintades_multiplicador: 1
     - Variacio: 0.1
+    - _Intensitat: 0
+    - _Quantitat: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SP_Multiplicador: 1
+    - _Tamany: 0
     m_Colors:
     - UV: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 0.46848452, g: 0.5176471, b: 0.4, a: 0}
+    - _UV: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &1352530245920574104
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

@@ -37,6 +37,21 @@ Material:
     - DifuminacioBordes_Y: 1
     - Noise: 23.1
     - Velocitat: 0.126
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - _Color: {r: 4.429407, g: 2.0491183, b: 1.4074752, a: 0.14117648}
   m_BuildTextureStacks: []
+--- !u!114 &3605664341111619033
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

@@ -181,29 +181,6 @@ void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosi
 // Additional Lights Toon Example
 //------------------------------------------------------------------------------------------------------
 
-/*
-- Obtains the DistanceSqr and Range of Additional Light
-- Is an alternative to produce multiple bands rather than solid colour. See AdditionalLightsToon function below
-*/
-/*
-#ifndef SHADERGRAPH_PREVIEW
-void GetAdditionalLightDistanceSqrRange(int i, float3 positionWS, out float distanceSqr, out float range){
-	int perObjectLightIndex = GetPerObjectLightIndex(i); // (i = index used in loop)
-	#if USE_STRUCTURED_BUFFER_FOR_LIGHT_DATA
-		float4 lightPositionWS = _AdditionalLightsBuffer[perObjectLightIndex].position;
-		half4 distanceAndSpotAttenuation = _AdditionalLightsBuffer[perObjectLightIndex].attenuation;
-	#else
-		float4 lightPositionWS = _AdditionalLightsPosition[perObjectLightIndex];
-		half4 distanceAndSpotAttenuation = _AdditionalLightsAttenuation[perObjectLightIndex];
-	#endif
-
-	float3 lightVector = lightPositionWS.xyz - positionWS * lightPositionWS.w;
-	distanceSqr = max(dot(lightVector, lightVector), HALF_MIN);
-	range = rsqrt(distanceAndSpotAttenuation.x);
-}
-#endif
-*/
-
 void AdditionalLightsToon_float(float3 SpecColor, float Smoothness, float3 WorldPosition, float3 WorldNormal, float3 WorldView,
 							out float3 Diffuse, out float3 Specular) {
 	float3 diffuseColor = 0;
@@ -221,33 +198,15 @@ void AdditionalLightsToon_float(float3 SpecColor, float Smoothness, float3 World
 		#else
 			Light light = GetAdditionalLight(i, WorldPosition);
 		#endif
-		
+
 		// DIFFUSE
+		diffuseColor += light.color * step(0.0001, light.distanceAttenuation * light.shadowAttenuation);
+		
 		/* (LightingLambert)
 		half NdotL = saturate(dot(normal, lightDir));
 		diffuseColor += lightColor * NdotL;
 		*/
-		
-		// Toon / Solid colour lights
-		diffuseColor += light.color * step(0.0001, light.distanceAttenuation * light.shadowAttenuation);
-		
-		// Multiple band alternatives :
-		/*
-		float atten = light.distanceAttenuation * light.shadowAttenuation;
-		diffuseColor += light.color * (
-			0.33 * step(0.1, atten) +
-			0.33 * step(0.03, atten) +
-			0.33 * step(0.0001, atten)
-		);
-		*/
-		// The above doesn't work great when changing light range though, another alternative that fixes this :
-		/*
-		float distanceSqr, range;
-		GetAdditionalLightDistanceSqrRange(i, WorldPosition, distanceSqr, range); // also uncomment function above
-		float Steps = 3;
-		diffuseColor += light.color * light.shadowAttenuation * saturate(1.0 - floor(sqrt(distanceSqr) / range * Steps) * (1.0 / Steps));
-		*/
-		
+
 		// SPECULAR
 		// Didn't really like the look of specular lighting in the toon shader here, so just keeping it at 0 (black, no light).
 	   	/* (LightingSpecular)
@@ -302,11 +261,11 @@ void MainLightFullAlternative_float (float3 WorldPos, out float3 Direction, out 
 		// If cascades are needed for an Unlit Graph,
 		// define the _MAIN_LIGHT_SHADOWS_CASCADE global multi_compile keyword in the graph and TransformWorldToShadowCoord will take care of it.
 		// Could also hardcode as this, but not recommended :
-		//half cascadeIndex = ComputeCascadeIndex(WorldPos);
-		//float4 shadowCoord = mul(_MainLightWorldToShadow[cascadeIndex], float4(WorldPos, 1.0));
+		// half cascadeIndex = ComputeCascadeIndex(WorldPos);
+		// float4 shadowCoord = mul(_MainLightWorldToShadow[cascadeIndex], float4(WorldPos, 1.0));
 
 		ShadowSamplingData shadowSamplingData = GetMainLightShadowSamplingData();
-		float shadowStrength = GetMainLightShadowStrength();
+		float shadowStrength = GetMainLightShadowStrength() * 2;
 		ShadowAtten = SampleShadowmap(shadowCoord, TEXTURE2D_ARGS(_MainLightShadowmapTexture, sampler_MainLightShadowmapTexture), shadowSamplingData, shadowStrength, false);
 	
 		// If soft shadows are needed for Unlit,

@@ -13,17 +13,46 @@ MonoBehaviour:
   m_Name: PaniniProjection
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   distance:
     m_OverrideState: 0
     m_Value: 1
-    min: 0
-    max: 1
   cropToFit:
     m_OverrideState: 0
     m_Value: 1
-    min: 0
-    max: 1
+--- !u!114 &-7412982208624753031
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 0
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.7328836, y: 0.7954822, z: 1, w: -0.12781955}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.045112766}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.78724575, z: 0.031894326, w: 0.48872182}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0.2
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.2
+  highlightsStart:
+    m_OverrideState: 1
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 1
+    m_Value: 0.55
 --- !u!114 &-4863770208571610014
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -37,45 +66,33 @@ MonoBehaviour:
   m_Name: Bloom
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
     m_Value: 0.9
-    min: 0
   intensity:
     m_OverrideState: 1
     m_Value: 2
-    min: 0
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
-    min: 0
-    max: 1
   clamp:
     m_OverrideState: 0
     m_Value: 65472
-    min: 0
   tint:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
-    min: 0
-    max: 16
   dirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
-    min: 0
 --- !u!114 &-2990304469474847809
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -89,7 +106,6 @@ MonoBehaviour:
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
     m_Value: 2
@@ -115,6 +131,7 @@ MonoBehaviour:
   - {fileID: 1536948969286277653}
   - {fileID: -7718911543442772462}
   - {fileID: 6742303276087343602}
+  - {fileID: -7412982208624753031}
 --- !u!114 &1403155257008042848
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -128,12 +145,9 @@ MonoBehaviour:
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
     m_Value: 0.2
-    min: 0
-    max: 1
 --- !u!114 &1536948969286277653
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -147,7 +161,6 @@ MonoBehaviour:
   m_Name: ColorCurves
   m_EditorClassIdentifier: 
   active: 0
-  m_AdvancedMode: 0
   master:
     m_OverrideState: 1
     m_Value:
@@ -346,31 +359,21 @@ MonoBehaviour:
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
   active: 0
-  m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
     m_Value: 0.5
   contrast:
     m_OverrideState: 1
     m_Value: -40
-    min: -100
-    max: 100
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
   hueShift:
     m_OverrideState: 0
     m_Value: 124
-    min: -180
-    max: 180
   saturation:
     m_OverrideState: 1
     m_Value: 0
-    min: -100
-    max: 100
 --- !u!114 &4935051358934224445
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -384,15 +387,12 @@ MonoBehaviour:
   m_Name: ColorLookup
   m_EditorClassIdentifier: 
   active: 0
-  m_AdvancedMode: 0
   texture:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: a5844da0df431dd4498e5760b4c0108d, type: 3}
   contribution:
     m_OverrideState: 1
     m_Value: 1
-    min: 0
-    max: 1
 --- !u!114 &5879696801143312351
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -406,24 +406,15 @@ MonoBehaviour:
   m_Name: SplitToning
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
     m_Value: {r: 0.7242346, g: 0.85547036, b: 0.990566, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   highlights:
     m_OverrideState: 0
     m_Value: {r: 0.6603774, g: 0.60586566, b: 0.43921328, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   balance:
     m_OverrideState: 0
     m_Value: 0
-    min: -100
-    max: 100
 --- !u!114 &6742303276087343602
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -437,26 +428,18 @@ MonoBehaviour:
   m_Name: Vignette
   m_EditorClassIdentifier: 
   active: 0
-  m_AdvancedMode: 0
   color:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   center:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
     m_Value: 1
-    min: 0
-    max: 1
   smoothness:
     m_OverrideState: 1
     m_Value: 0.01
-    min: 0.01
-    max: 1
   rounded:
     m_OverrideState: 1
     m_Value: 1
