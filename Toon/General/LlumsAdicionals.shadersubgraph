@@ -1,9 +1,15 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "6f9cc2a02fe545b897ebc707c458ab04",
     "m_Properties": [],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "2ecc8bef6a5e4e0c9041a15576329edd"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "bac933ee58b847c3bdbe34f1acbd2f1e"
@@ -199,6 +205,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "5d43b99b576049ac9ae66ec32e0e1f7c"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "c8b292485f0045eb89920486d02b11fc"
+                },
+                "m_SlotId": 3
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "5fe328a4d9e94486a66a99293482d506"
                 },
                 "m_SlotId": 2
@@ -271,10 +291,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "bac933ee58b847c3bdbe34f1acbd2f1e"
@@ -336,7 +357,8 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_Space": 2
+    "m_Space": 2,
+    "m_PositionSource": 0
 }
 
 {
@@ -479,7 +501,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.ViewDirectionNode",
     "m_ObjectId": "1d926a7f2f544f579ee8e29ca0afdb1b",
     "m_Group": {
@@ -556,6 +578,14 @@
         "Y",
         "Z"
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "2ecc8bef6a5e4e0c9041a15576329edd",
+    "m_Name": "",
+    "m_ChildObjectList": []
 }
 
 {

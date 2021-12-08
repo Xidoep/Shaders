@@ -55,6 +55,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SP_Textura:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_90f6146f6e834589bcd3985b45f61b17_Out_0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -80,10 +84,13 @@ Material:
     - Brillo_Intensitat: 0.98
     - Brillo_Tamany: 1
     - SP_multiplicador: 1
+    - _Intensitat: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SP_Multiplicador: 0
+    - _Tamany: 0.99999
     m_Colors:
-    - _Color: {r: 0.4894718, g: 0.38656992, b: 0.6886792, a: 0}
+    - _Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5919055282304103590
 MonoBehaviour:
