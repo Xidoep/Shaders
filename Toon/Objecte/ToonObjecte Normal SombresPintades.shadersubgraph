@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "555d61f1cc4549f592d284e7fa2c27f9",
     "m_Properties": [
@@ -23,6 +23,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "a4bff140647c4a7eb820f9724dd38999"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -407,10 +413,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -647,6 +654,8 @@
     "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -720,10 +729,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 472.0,
-            "y": -46.0,
-            "width": 350.0,
-            "height": 189.99998474121095
+            "x": 471.0,
+            "y": -45.9999885559082,
+            "width": 347.0,
+            "height": 190.00001525878907
         }
     },
     "m_Slots": [
@@ -771,7 +780,9 @@
         -1395424468,
         1878329409,
         -338520975
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -847,6 +858,8 @@
     "m_DefaultReferenceName": "Brillo_intensitat",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -949,6 +962,8 @@
     "m_DefaultReferenceName": "Normals",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -957,6 +972,8 @@
         "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
@@ -991,8 +1008,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 268.0,
-            "y": 141.00001525878907,
+            "x": 269.0,
+            "y": 144.0,
             "width": 155.0,
             "height": 142.0
         }
@@ -1378,6 +1395,8 @@
     "m_DefaultReferenceName": "Sombres_pintedes",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1388,6 +1407,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1528,6 +1548,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1538,6 +1560,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1612,7 +1635,9 @@
         53353518,
         1442223662,
         678152500
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1628,6 +1653,33 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "a4bff140647c4a7eb820f9724dd38999",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "9913eb32d6fe4f1eb9450d4e8c1c808f"
+        },
+        {
+            "m_Id": "388dbddcb90e408db0ddd1f74da76f28"
+        },
+        {
+            "m_Id": "84df1f1328bf47f6bfca085a94c3b86e"
+        },
+        {
+            "m_Id": "2e015b830f6c4eff941950a21b0bb9e2"
+        },
+        {
+            "m_Id": "ff9737ef6e3d4512b321f7031ee9a1a9"
+        },
+        {
+            "m_Id": "1a7903c4a99d46fbb353bbfaaf2d7df3"
+        }
+    ]
 }
 
 {
@@ -1912,7 +1964,9 @@
         -1360243965,
         2059917501,
         1593666179
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -2117,7 +2171,9 @@
     ],
     "m_PropertyIds": [
         -595729656
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -2318,10 +2374,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 576.9999389648438,
-            "y": -204.99998474121095,
-            "width": 197.99998474121095,
-            "height": 117.99999237060547
+            "x": 576.0,
+            "y": -214.0,
+            "width": 196.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -2350,7 +2406,9 @@
     "m_PropertyIds": [
         619094627,
         -1634378976
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -2488,6 +2546,8 @@
     "m_DefaultReferenceName": "Brillo_tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,

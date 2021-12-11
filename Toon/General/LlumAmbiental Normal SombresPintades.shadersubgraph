@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "2010baa58ed64a6fa52d4ac81b8e7c59",
     "m_Properties": [
@@ -20,6 +20,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "3643796b3c4f4fdda789432ee70e3b3d"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f397dbe99cd849758938af2b4b69326e"
@@ -295,10 +301,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "f397dbe99cd849758938af2b4b69326e"
@@ -315,7 +322,7 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "ColorLlum",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -362,9 +369,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1313.0,
-            "y": 289.9999694824219,
-            "width": 336.0,
+            "x": -1298.9998779296875,
+            "y": 285.0,
+            "width": 332.0,
             "height": 350.0
         }
     },
@@ -407,7 +414,9 @@
         -172585920,
         1337432584,
         -252389592
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -568,6 +577,30 @@
         "X",
         "Y",
         "Z"
+    ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "3643796b3c4f4fdda789432ee70e3b3d",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "78b919a0cc8945b6ac453b52b0c97344"
+        },
+        {
+            "m_Id": "a22c5439a53f4ebfac68560295c8376b"
+        },
+        {
+            "m_Id": "b14bad5b571c4719adacda4ced16e0ef"
+        },
+        {
+            "m_Id": "9e8883c0fb2e4de8ab1c7d43d109df39"
+        },
+        {
+            "m_Id": "d0f622b7748e48509c9d29d0b964779a"
+        }
     ]
 }
 
@@ -1029,6 +1062,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1039,6 +1074,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1156,6 +1192,8 @@
     "m_DefaultReferenceName": "Normals",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1164,6 +1202,8 @@
         "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
@@ -1181,6 +1221,8 @@
     "m_DefaultReferenceName": "Sombres_pintades",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1191,6 +1233,7 @@
         "b": 1.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1255,6 +1298,8 @@
     "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1411,6 +1456,8 @@
     "m_DefaultReferenceName": "UV",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
