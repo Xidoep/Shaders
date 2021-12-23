@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "49b9e1a9d23f40ba85dde8404fedfb53",
     "m_Properties": [
@@ -11,6 +11,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "ed66b770599d4a5584b7658e0b9bc28a"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f4d10f2ff78d4b6d9993f32a970c6ccd"
@@ -377,10 +383,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "f4d10f2ff78d4b6d9993f32a970c6ccd"
@@ -722,7 +729,9 @@
     },
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"c90c18a723ce3964097202a50e656206\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [],
-    "m_PropertyIds": []
+    "m_PropertyIds": [],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -907,6 +916,8 @@
     "m_DefaultReferenceName": "Tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,
@@ -1265,6 +1276,9 @@
             "m_Id": "00f178145d2f474e9ceeea7a1247f7c8"
         },
         {
+            "m_Id": "eb3a612f0b5c4868ab52823caad982e2"
+        },
+        {
             "m_Id": "e9d9d139b8014dc990b29ded4e3657ee"
         }
     ],
@@ -1277,11 +1291,15 @@
     },
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"b77c01bca4eeba7498e50c0041a85990\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [
-        "5af6bde2-a80c-40b4-b302-9b27e131771d"
+        "5af6bde2-a80c-40b4-b302-9b27e131771d",
+        "0603c959-656c-47fd-83aa-6251645b9977"
     ],
     "m_PropertyIds": [
-        1778056523
-    ]
+        1778056523,
+        1728404946
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1434,7 +1452,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.ViewDirectionNode",
     "m_ObjectId": "5e7d2b8ff3e545a19d748cd719697398",
     "m_Group": {
@@ -1445,10 +1463,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -519.0,
-            "y": 135.50003051757813,
+            "x": -514.0000610351563,
+            "y": 136.00001525878907,
             "width": 206.0,
-            "height": 132.0
+            "height": 130.99998474121095
         }
     },
     "m_Slots": [
@@ -2278,6 +2296,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "eb3a612f0b5c4868ab52823caad982e2",
+    "m_Id": 1728404946,
+    "m_DisplayName": "UV",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UV",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "ed66b770599d4a5584b7658e0b9bc28a",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "2bcf6586acb94fdab3004883632a7925"
+        },
+        {
+            "m_Id": "ef3ac90dd0bf49cb859dadecff20ec67"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SaturateNode",
     "m_ObjectId": "ee20c81eeb1c468296a329e32cc49596",
     "m_Group": {
@@ -2324,6 +2378,8 @@
     "m_DefaultReferenceName": "Normals",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -2332,6 +2388,8 @@
         "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"9a2ab4df4098afb40b8c725dc89927d3\",\"type\":3}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }

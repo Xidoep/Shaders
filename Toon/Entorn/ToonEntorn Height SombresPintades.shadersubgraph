@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "555d61f1cc4549f592d284e7fa2c27f9",
     "m_Properties": [
@@ -23,6 +23,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "951cc06ffcd042269b5db7eef6ad47f3"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -370,10 +376,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -432,7 +439,9 @@
         -1360243965,
         2059917501,
         -578268804
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -821,7 +830,9 @@
     "m_PropertyIds": [
         53353518,
         -791618413
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1189,7 +1200,9 @@
         1070083550,
         1680374555,
         -892683401
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1269,6 +1282,8 @@
     "m_DefaultReferenceName": "SombresPintades",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1279,6 +1294,7 @@
         "b": 1.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1454,6 +1470,33 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "951cc06ffcd042269b5db7eef6ad47f3",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "edffa159646240ba86786bee35f50a40"
+        },
+        {
+            "m_Id": "7fe26bcebb7f429ca07325ff41bd6bad"
+        },
+        {
+            "m_Id": "d3c445be91f2400d874a7781b0104dea"
+        },
+        {
+            "m_Id": "bfec091ec97e41a9b7a37929590d5ea4"
+        },
+        {
+            "m_Id": "b1edc7ae435c4dd5b39581e2ab829462"
+        },
+        {
+            "m_Id": "ce5f2ca8b6164ed7aeb0bfa81313a563"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "9c20da0f4f87432fac49fa71ca1e8070",
     "m_Group": {
@@ -1515,6 +1558,8 @@
     "m_DefaultReferenceName": "Brillo_tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,
@@ -1593,6 +1638,8 @@
     "m_DefaultReferenceName": "Brillo_intensitat",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1661,7 +1708,9 @@
     "m_PropertyIds": [
         -232494268,
         -1819509607
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1677,6 +1726,8 @@
     "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1778,7 +1829,9 @@
     "m_PropertyIds": [
         -595729656,
         -1347553737
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1817,6 +1870,8 @@
     "m_DefaultReferenceName": "Height",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1979,6 +2034,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1989,6 +2046,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 

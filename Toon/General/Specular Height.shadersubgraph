@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "49b9e1a9d23f40ba85dde8404fedfb53",
     "m_Properties": [
@@ -14,6 +14,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "a586c630ddd44c55a341ebf897a2e1c9"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f4d10f2ff78d4b6d9993f32a970c6ccd"
@@ -482,10 +488,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "f4d10f2ff78d4b6d9993f32a970c6ccd"
@@ -929,7 +936,9 @@
     },
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"c90c18a723ce3964097202a50e656206\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [],
-    "m_PropertyIds": []
+    "m_PropertyIds": [],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1137,6 +1146,8 @@
     "m_DefaultReferenceName": "Intensitat",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1221,6 +1232,8 @@
     "m_DefaultReferenceName": "Tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,
@@ -1416,6 +1429,8 @@
     "m_DefaultReferenceName": "Height",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1637,7 +1652,9 @@
         1778056523,
         -996253835,
         1251009404
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -2552,6 +2569,24 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "a586c630ddd44c55a341ebf897a2e1c9",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "26c0f5a2e2954a4eabf1828c8e7199da"
+        },
+        {
+            "m_Id": "2bcf6586acb94fdab3004883632a7925"
+        },
+        {
+            "m_Id": "37fa4d224c334a5b943583b7f8fe58f4"
+        }
+    ]
 }
 
 {

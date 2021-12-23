@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "2010baa58ed64a6fa52d4ac81b8e7c59",
     "m_Properties": [
@@ -11,6 +11,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "b5be516eea9e41fa8ff8890979521115"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f397dbe99cd849758938af2b4b69326e"
@@ -239,10 +245,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "f397dbe99cd849758938af2b4b69326e"
@@ -317,7 +324,7 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "ColorLlum",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -765,6 +772,8 @@
     "m_DefaultReferenceName": "Height",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -825,6 +834,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -835,6 +846,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -994,7 +1006,9 @@
     ],
     "m_PropertyIds": [
         -1351258485
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1030,6 +1044,21 @@
     "m_Property": {
         "m_Id": "6e76ecdec29349d2bea5c9e8f299f65f"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "b5be516eea9e41fa8ff8890979521115",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "78b919a0cc8945b6ac453b52b0c97344"
+        },
+        {
+            "m_Id": "6e76ecdec29349d2bea5c9e8f299f65f"
+        }
+    ]
 }
 
 {

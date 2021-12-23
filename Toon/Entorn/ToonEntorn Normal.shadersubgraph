@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "555d61f1cc4549f592d284e7fa2c27f9",
     "m_Properties": [
@@ -20,6 +20,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "8745c79929b042468aaa092572968159"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -401,10 +407,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -571,6 +578,8 @@
     "m_DefaultReferenceName": "Normals",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -579,6 +588,8 @@
         "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"9a2ab4df4098afb40b8c725dc89927d3\",\"type\":3}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
@@ -726,7 +737,9 @@
         -1360243965,
         2059917501,
         1593666179
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -986,10 +999,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "4add0d6167e647189da082b588ebc298",
     "m_Id": 53353518,
-    "m_DisplayName": "Height",
+    "m_DisplayName": "Normal",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "Height",
+    "m_ShaderOutputName": "Normal",
     "m_StageCapability": 2,
     "m_BareResource": false,
     "m_Texture": {
@@ -1048,7 +1061,9 @@
         546406299,
         1070083550,
         -338520975
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1098,6 +1113,8 @@
     "m_DefaultReferenceName": "Brillo_tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,
@@ -1325,6 +1342,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "8745c79929b042468aaa092572968159",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "edffa159646240ba86786bee35f50a40"
+        },
+        {
+            "m_Id": "1186e99cae0c467fb364e5decfe4c313"
+        },
+        {
+            "m_Id": "bc90d4d2026a4ab1a361271f6a52f5fa"
+        },
+        {
+            "m_Id": "679b78d1a088487f97748a0730398f6f"
+        },
+        {
+            "m_Id": "f44c998c846f48248d01353324ca0fde"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphOutputNode",
     "m_ObjectId": "874be4a7020b4fe681384a50da697d88",
     "m_Group": {
@@ -1482,7 +1523,9 @@
         53353518,
         1442223662,
         678152500
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1628,10 +1671,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 656.0,
-            "y": -401.9999694824219,
-            "width": 208.99998474121095,
-            "height": 117.99999237060547
+            "x": 657.0,
+            "y": -402.0000305175781,
+            "width": 205.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -1660,7 +1703,9 @@
     "m_PropertyIds": [
         1654165624,
         1780745842
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1676,6 +1721,8 @@
     "m_DefaultReferenceName": "Brillo_intensitat",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1860,7 +1907,9 @@
     "m_PropertyIds": [
         -595729656,
         -1347553737
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -2078,6 +2127,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -2088,6 +2139,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -2139,6 +2191,8 @@
     "m_DefaultReferenceName": "UV",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
