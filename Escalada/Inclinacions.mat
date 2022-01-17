@@ -32,6 +32,50 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _C1_2_Heigh:
+        m_Texture: {fileID: 2800000, guid: 0627dfa9d9fd05241965f03b5cc5c587, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_Normal:
+        m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_Texture:
+        m_Texture: {fileID: 2800000, guid: 3386747ebb896b2489bafba823393f49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_3_Heigh:
+        m_Texture: {fileID: 2800000, guid: eac0c9dfdffee4d4a9b68a0d9adf0fc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Normal:
+        m_Texture: {fileID: 2800000, guid: 2508071f2ee97c643a51c56868d535af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Texture:
+        m_Texture: {fileID: 2800000, guid: 49b2fc5be7dc7584badee8e39c0f78e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Normal:
+        m_Texture: {fileID: 2800000, guid: f260f4e7aed72184e8282c75ce1209b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Texture:
+        m_Texture: {fileID: 2800000, guid: b38731e7ac2bf4648b914e2b877ff3ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 3386747ebb896b2489bafba823393f49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_Array:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -45,6 +89,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smooth: 0.1
+    m_Colors:
+    - _Brillo_Int_Siz_UI_X_Y: {r: 0, g: 0, b: 0, a: 0}
+    - _C1_Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _C1_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.2, g: 1, b: 0.5, a: 0.5}
+    - _C2_Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _C2_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _C3_Tint: {r: 1, g: 0.99611545, b: 0.9669811, a: 0}
+    - _C3_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 1, b: 0.2, a: 0.2}
+    - _Intensitat_Tamany: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 1, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
