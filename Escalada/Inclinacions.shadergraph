@@ -1251,27 +1251,12 @@
     "m_ZTestMode": 4,
     "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
-    "m_RenderFace": 2,
+    "m_RenderFace": 0,
     "m_AlphaClip": false,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "2ed042e6c981466686a982ba531c9084",
-    "m_Id": -1052549707,
-    "m_DisplayName": "RelliscarToEscalar",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_RelliscarToEscalar",
-    "m_StageCapability": 3,
-    "m_Value": 0.800000011920929,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -2388,24 +2373,15 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1086.0,
-            "y": 55.999969482421878,
-            "width": 275.0001220703125,
-            "height": 166.0000762939453
+            "x": -1089.0,
+            "y": 35.0,
+            "width": 275.0,
+            "height": 165.99998474121095
         }
     },
     "m_Slots": [
         {
             "m_Id": "562a9d97cafc4be08133c92da22bf776"
-        },
-        {
-            "m_Id": "d7c8468909654abfa5d00304a40bed45"
-        },
-        {
-            "m_Id": "2ed042e6c981466686a982ba531c9084"
-        },
-        {
-            "m_Id": "b4b4880b4a06479793ddc83886b85e5f"
         },
         {
             "m_Id": "c0d422d66e7140fc8850d17c5d8537af"
@@ -3172,21 +3148,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "b4b4880b4a06479793ddc83886b85e5f",
-    "m_Id": 2068981606,
-    "m_DisplayName": "EscalarToInescalable",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_EscalarToInescalable",
-    "m_StageCapability": 3,
-    "m_Value": -0.8999999761581421,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
     "m_ObjectId": "b5f509e9b7b949f09c5d4e2de90c41ba",
     "m_Guid": {
@@ -3755,21 +3716,6 @@
             "m_Id": "29a0c2d03e5b4623a7a8838159615c2f"
         }
     ]
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "d7c8468909654abfa5d00304a40bed45",
-    "m_Id": 264311982,
-    "m_DisplayName": "PlaToRelliscar",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_PlaToRelliscar",
-    "m_StageCapability": 3,
-    "m_Value": 0.25,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {

@@ -91,6 +91,20 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+                    "m_Id": "2ef54f23fdb848cca557feacb3955c53"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "17b4edc7b23f46e497f218c4f21ee29c"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
                     "m_Id": "647e917186b74d829eba54dbe39fa0ef"
                 },
                 "m_SlotId": 1
@@ -192,20 +206,6 @@
                     "m_Id": "f988c0a28f614dfeabf23635715c092b"
                 },
                 "m_SlotId": -165031777
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "647e917186b74d829eba54dbe39fa0ef"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "2ef54f23fdb848cca557feacb3955c53"
-                },
-                "m_SlotId": 1
             }
         },
         {
@@ -517,21 +517,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "2615aaf8ca514acfa1af989cd5190c61",
-    "m_Id": -1052549707,
-    "m_DisplayName": "RelliscarToEscalar",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_RelliscarToEscalar",
-    "m_StageCapability": 3,
-    "m_Value": 0.800000011920929,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "265e8ec418e348edbf91a5fffeb1c1e4",
     "m_Id": 0,
@@ -552,21 +537,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "278e797161204800a51485d6fff3abf2",
-    "m_Id": 2068981606,
-    "m_DisplayName": "EscalarToInescalable",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_EscalarToInescalable",
-    "m_StageCapability": 3,
-    "m_Value": -0.8999999761581421,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -1391,15 +1361,6 @@
             "m_Id": "ea880f884aeb4be9a233ffc016952f81"
         },
         {
-            "m_Id": "da0fe62981bb4ec2a8d2e147c4de63d9"
-        },
-        {
-            "m_Id": "2615aaf8ca514acfa1af989cd5190c61"
-        },
-        {
-            "m_Id": "278e797161204800a51485d6fff3abf2"
-        },
-        {
             "m_Id": "2b509ac1f3e846bf9717501afdefc936"
         }
     ],
@@ -1744,7 +1705,7 @@
     "m_ShaderOutputName": "A",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -0.05000000074505806,
+        "x": -0.10000000149011612,
         "y": -0.10000000149011612,
         "z": -0.10000000149011612,
         "w": 0.0
@@ -1932,21 +1893,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "da0fe62981bb4ec2a8d2e147c4de63d9",
-    "m_Id": 264311982,
-    "m_DisplayName": "PlaToRelliscar",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_PlaToRelliscar",
-    "m_StageCapability": 3,
-    "m_Value": 0.25,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
