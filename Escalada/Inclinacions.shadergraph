@@ -2039,6 +2039,9 @@
             "m_Id": "f573009182af4c2c9f98b22f93b7b76f"
         },
         {
+            "m_Id": "b0f70168c5fa4eea8899975323113179"
+        },
+        {
             "m_Id": "9cbe1689a39f4065822312974b6efda6"
         }
     ],
@@ -2057,7 +2060,8 @@
         "36547d08-7eb7-450d-9750-702f5c337558",
         "dbac4e83-51a3-41e0-bca5-590dcda37b86",
         "526a86e8-43e7-4fa2-aa28-fff340524bc2",
-        "448ad73f-bb4b-4e86-8e92-92bc7cbfdcf1"
+        "448ad73f-bb4b-4e86-8e92-92bc7cbfdcf1",
+        "11f55a0e-cdee-4696-a876-86198efd4b65"
     ],
     "m_PropertyIds": [
         -1248281998,
@@ -2066,7 +2070,8 @@
         73162868,
         292428113,
         746373093,
-        1195524486
+        1195524486,
+        732830918
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -3017,6 +3022,29 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "b0f70168c5fa4eea8899975323113179",
+    "m_Id": 732830918,
+    "m_DisplayName": "Vector3",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Vector3",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "b2701ca06f2d41e9a92f990c63af2d76",
     "m_Group": {
@@ -3198,6 +3226,29 @@
     "m_StageCapability": 2,
     "m_Value": 1.0,
     "m_DefaultValue": 1.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "bacebe6972d64e9d9bdfcd9ff945704f",
+    "m_Id": 732830918,
+    "m_DisplayName": "Vector3",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Vector3",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
     "m_Labels": []
 }
 
@@ -3445,6 +3496,9 @@
             "m_Id": "66fc044ba4054e8ab6d8a54e6b6f599d"
         },
         {
+            "m_Id": "bacebe6972d64e9d9bdfcd9ff945704f"
+        },
+        {
             "m_Id": "af468b01e4e846379e7a6b327e8be749"
         }
     ],
@@ -3463,7 +3517,8 @@
         "36547d08-7eb7-450d-9750-702f5c337558",
         "dbac4e83-51a3-41e0-bca5-590dcda37b86",
         "526a86e8-43e7-4fa2-aa28-fff340524bc2",
-        "448ad73f-bb4b-4e86-8e92-92bc7cbfdcf1"
+        "448ad73f-bb4b-4e86-8e92-92bc7cbfdcf1",
+        "11f55a0e-cdee-4696-a876-86198efd4b65"
     ],
     "m_PropertyIds": [
         -1248281998,
@@ -3472,7 +3527,8 @@
         73162868,
         292428113,
         746373093,
-        1195524486
+        1195524486,
+        732830918
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
