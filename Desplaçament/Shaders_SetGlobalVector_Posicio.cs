@@ -9,7 +9,7 @@ public class Shaders_SetGlobalVector_Posicio : MonoBehaviour
 
     void Update()
     {
-        XS_Utils.Shaders.SetGlobal(transform.position, POSICIO);
+        XS_Utils.XS_Shader.SetGlobal(transform.position, POSICIO);
     }
 
 }
