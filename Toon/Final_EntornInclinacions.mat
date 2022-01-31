@@ -36,6 +36,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 0627dfa9d9fd05241965f03b5cc5c587, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _C1_Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _C1_Normal:
         m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -45,7 +49,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _C2_3_Heigh:
-        m_Texture: {fileID: 2800000, guid: eac0c9dfdffee4d4a9b68a0d9adf0fc5, type: 3}
+        m_Texture: {fileID: 2800000, guid: c111622df8006e44d97b5bbec37d9761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Ambient:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _C2_Normal:
@@ -54,6 +62,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _C2_Texture:
         m_Texture: {fileID: 2800000, guid: 49b2fc5be7dc7584badee8e39c0f78e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Ambient:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _C3_Normal:
@@ -92,15 +104,15 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smooth: 0.1
+    - _Smooth: 0.089
     m_Colors:
     - _Brillo_Int_Siz_UI_X_Y: {r: 0, g: 0, b: 0, a: 0}
-    - _C1_Tint: {r: 1, g: 1, b: 1, a: 0}
-    - _C1_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.2, g: 1, b: 0.5, a: 0.5}
+    - _C1_Tint: {r: 0.8301887, g: 0.7649377, b: 0.5991456, a: 0}
+    - _C1_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 3.19, g: 1, b: 1, a: 1}
     - _C2_Tint: {r: 1, g: 1, b: 1, a: 0}
-    - _C2_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _C3_Tint: {r: 1, g: 0.99611545, b: 0.9669811, a: 0}
-    - _C3_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 1, b: 0.5, a: 0.5}
+    - _C2_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _C3_Tint: {r: 0.8396226, g: 0.71979254, b: 0.5663492, a: 0}
+    - _C3_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 1, b: 1, a: 1}
     - _Intensitat_Tamany: {r: 0, g: 0, b: 0, a: 0}
     - _Tint: {r: 1, g: 1, b: 1, a: 0}
     - _X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 1, g: 0.5, b: 0.5, a: 0.5}
