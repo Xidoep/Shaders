@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Particules_DissoldreCercle_NoAmbient
-  m_Shader: {fileID: -6465566751694194690, guid: 66910d9a46fe0be4f8a9871618502802, type: 3}
+  m_Name: Particules_DissoldreMesh
+  m_Shader: {fileID: -6465566751694194690, guid: 7547bd9289ee4cc42a7443c2deab4517, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -33,16 +33,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_215E45CD: 0.4
-    - Vector1_29E6C16: 0.05
-    - Vector1_2BFF4AA9: 0.5
-    - Vector1_614EABBF: 1
-    - _Gruix: -0.079
-    - _QueueControl: 1
+    - Custom1: 2
+    - Vector1_29E6C16: 0.043
+    - Vector1_2BFF4AA9: 3
+    - Vector1_614EABBF: 0
+    - Vector1_EA6BC7C7: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
+    - _w_Color_multiplyer: 0
+    - _x_AlphaCliping: 0
+    - _y_UV_offset: 0
+    - _z: 0
+    - _z_AlphaCliping: 0
+    - _z_UV_resolution: 0
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &1621698353899105424
+--- !u!114 &5094313827142852830
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
