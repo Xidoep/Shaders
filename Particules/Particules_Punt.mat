@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Particules_DissoldreMesh
-  m_Shader: {fileID: -6465566751694194690, guid: 7547bd9289ee4cc42a7443c2deab4517, type: 3}
+  m_Name: Particules_Punt
+  m_Shader: {fileID: -6465566751694194690, guid: 05653ff9e9c45d84b86c0f25721efae3, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 2
-  m_EnableInstancingVariants: 1
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -33,22 +33,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Custom1: 2
-    - Vector1_29E6C16: 0.043
-    - Vector1_2BFF4AA9: 3
-    - Vector1_614EABBF: 0
-    - Vector1_EA6BC7C7: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _w_Color_multiplyer: 0
     - _x_AlphaCliping: 0
+    - _x_Think_dot: 0
     - _y_UV_offset: 0
-    - _z: 0
-    - _z_AlphaCliping: 0
     - _z_UV_resolution: 0
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &5094313827142852830
+--- !u!114 &6341665927838316250
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
