@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "2010baa58ed64a6fa52d4ac81b8e7c59",
     "m_Properties": [
@@ -7,16 +7,19 @@
             "m_Id": "78b919a0cc8945b6ac453b52b0c97344"
         },
         {
-            "m_Id": "a22c5439a53f4ebfac68560295c8376b"
-        },
-        {
             "m_Id": "6e76ecdec29349d2bea5c9e8f299f65f"
         },
         {
-            "m_Id": "cfb2b9ff4ddf4f76b058c3ed25907a5d"
+            "m_Id": "c18b5cf0237c486ebde45d967c620b22"
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "07834a048819484a961ef8d8e956dfa2"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f397dbe99cd849758938af2b4b69326e"
@@ -43,16 +46,13 @@
             "m_Id": "0b833a1a9e864316a81517ee80dfbe79"
         },
         {
-            "m_Id": "e5f484d4916a4e63ad37a81a3954c44d"
-        },
-        {
             "m_Id": "f4d708727b4348be99917dfb31b9c5e9"
         },
         {
             "m_Id": "b41060d089804f9fad0ecc80c2a80f90"
         },
         {
-            "m_Id": "4abf82fd7dcc446bb7407a1370a33d9a"
+            "m_Id": "f5c0f710cb8548e8b275543f5e70b919"
         }
     ],
     "m_GroupDatas": [
@@ -104,20 +104,6 @@
                     "m_Id": "98834307e0e640389f3d7fc0fb7e9beb"
                 },
                 "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "4abf82fd7dcc446bb7407a1370a33d9a"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "f4d708727b4348be99917dfb31b9c5e9"
-                },
-                "m_SlotId": -348160142
             }
         },
         {
@@ -207,20 +193,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "e5f484d4916a4e63ad37a81a3954c44d"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "f4d708727b4348be99917dfb31b9c5e9"
-                },
-                "m_SlotId": 1732279556
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "e9fa4026e2a84112a97eac75636f4b8e"
                 },
                 "m_SlotId": 1
@@ -259,6 +231,20 @@
                 },
                 "m_SlotId": 1
             }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "f5c0f710cb8548e8b275543f5e70b919"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "f4d708727b4348be99917dfb31b9c5e9"
+                },
+                "m_SlotId": 1102482227
+            }
         }
     ],
     "m_VertexContext": {
@@ -279,15 +265,34 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "f397dbe99cd849758938af2b4b69326e"
     },
     "m_ActiveTargets": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "07834a048819484a961ef8d8e956dfa2",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "78b919a0cc8945b6ac453b52b0c97344"
+        },
+        {
+            "m_Id": "6e76ecdec29349d2bea5c9e8f299f65f"
+        },
+        {
+            "m_Id": "c18b5cf0237c486ebde45d967c620b22"
+        }
+    ]
 }
 
 {
@@ -552,41 +557,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "4abf82fd7dcc446bb7407a1370a33d9a",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1596.0,
-            "y": 402.0,
-            "width": 243.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "5bee49d6bde045779e2706d5f12b4432"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "cfb2b9ff4ddf4f76b058c3ed25907a5d"
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "4ad94b04f52c4a229c59019e93669573",
     "m_Id": 2,
@@ -646,31 +616,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "577936b759f64226a095d5d16f4c9d23",
-    "m_Id": 0,
-    "m_DisplayName": "Sombres pintades",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "5b5f3ed83ee449cb9e20a40e5982e2c4",
     "m_Id": 0,
@@ -691,21 +636,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "5bee49d6bde045779e2706d5f12b4432",
-    "m_Id": 0,
-    "m_DisplayName": "Sombres pintades multiplicador",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -857,6 +787,8 @@
     "m_DefaultReferenceName": "Height",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -917,6 +849,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -927,6 +861,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -952,21 +887,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "8add3ded2ac446bfbc1d7d5b80299114",
-    "m_Id": -348160142,
-    "m_DisplayName": "Sombres pintades multiplicador",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Sombres_pintades_multiplicador",
-    "m_StageCapability": 2,
-    "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -1012,29 +932,18 @@
 }
 
 {
-    "m_SGVersion": 3,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
-    "m_ObjectId": "a22c5439a53f4ebfac68560295c8376b",
-    "m_Guid": {
-        "m_GuidSerialized": "9ee4ee7c-1c03-40ec-abf8-13c2ec9cb3f0"
-    },
-    "m_Name": "Sombres pintades",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Sombres pintades",
-    "m_DefaultReferenceName": "Sombres_pintades",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a0fcb347360d46d6a917329ea089c2ca",
+    "m_Id": 0,
+    "m_DisplayName": "Ambient",
+    "m_SlotType": 1,
     "m_Hidden": false,
-    "m_Value": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.0
-    },
-    "m_ColorMode": 0
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1097,10 +1006,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1463.9998779296875,
-            "y": 350.0,
-            "width": 111.00000762939453,
-            "height": 34.0
+            "x": -1467.0,
+            "y": 290.0000305175781,
+            "width": 110.0,
+            "height": 33.999969482421878
         }
     },
     "m_Slots": [
@@ -1177,7 +1086,7 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "ColorLlum",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -1225,48 +1134,25 @@
 }
 
 {
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "cde233517d9a490194140081a33c018b",
-    "m_Id": 1732279556,
-    "m_DisplayName": "Sombres pintades",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Sombres_pintades",
-    "m_StageCapability": 2,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "cfb2b9ff4ddf4f76b058c3ed25907a5d",
+    "m_ObjectId": "c18b5cf0237c486ebde45d967c620b22",
     "m_Guid": {
-        "m_GuidSerialized": "b9b5f30a-cf7f-48e0-99be-bc2c0691ec9d"
+        "m_GuidSerialized": "7051cd75-bc23-4adf-b6eb-1f7bee16bcba"
     },
-    "m_Name": "Sombres pintades multiplicador",
+    "m_Name": "Ambient",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Sombres pintades multiplicador",
-    "m_DefaultReferenceName": "Sombres_pintades_multiplicador",
+    "m_RefNameGeneratedByDisplayName": "Ambient",
+    "m_DefaultReferenceName": "_Ambient",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 1.0,
+    "m_Value": 0.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -1342,37 +1228,17 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "e5f484d4916a4e63ad37a81a3954c44d",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1525.9998779296875,
-            "y": 307.0,
-            "width": 173.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "577936b759f64226a095d5d16f4c9d23"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "a22c5439a53f4ebfac68560295c8376b"
-    }
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "e79aee986f4644cd9f6142cf1ca4e2ea",
+    "m_Id": 1102482227,
+    "m_DisplayName": "Ambient",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Ambient",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1502,13 +1368,10 @@
     },
     "m_Slots": [
         {
-            "m_Id": "cde233517d9a490194140081a33c018b"
-        },
-        {
             "m_Id": "d4f8de43f5ec4bf8bb877d05b5ea8ec9"
         },
         {
-            "m_Id": "8add3ded2ac446bfbc1d7d5b80299114"
+            "m_Id": "e79aee986f4644cd9f6142cf1ca4e2ea"
         },
         {
             "m_Id": "12b171ec05b24afd9c6adcb5bbc109c0"
@@ -1529,14 +1392,53 @@
         "ce203996-ef60-4426-8b6c-465cded53ab4",
         "8fe4c0e3-a452-4c6a-81b4-deef3fb28ec9",
         "3ca421f7-4cd1-4f12-8d0e-df5553dbbc6e",
-        "faaa3258-ce95-4d67-a5a6-dfa7a2ad394d"
+        "faaa3258-ce95-4d67-a5a6-dfa7a2ad394d",
+        "624aff80-12e9-43c7-aa78-17c6f01e2ca6"
     ],
     "m_PropertyIds": [
         1732279556,
         -172585920,
         -1351258485,
-        -348160142
-    ]
+        -348160142,
+        1102482227
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "f5c0f710cb8548e8b275543f5e70b919",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1476.0,
+            "y": 384.0000305175781,
+            "width": 119.0,
+            "height": 33.999969482421878
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "a0fcb347360d46d6a917329ea089c2ca"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "c18b5cf0237c486ebde45d967c620b22"
+    }
 }
 
 {

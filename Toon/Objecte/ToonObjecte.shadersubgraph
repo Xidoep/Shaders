@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "555d61f1cc4549f592d284e7fa2c27f9",
     "m_Properties": [
@@ -17,6 +17,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "52dfa207691f43489dd18e8bc33462f2"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -151,20 +157,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "9894dcec80174a0d8640722051dd1b1a"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "80ae925d4b2349e7bf823cf27c90f3a1"
-                },
-                "m_SlotId": -1847087520
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "bb7417e6510b43dea520753a8173bfd2"
                 },
                 "m_SlotId": 0
@@ -265,10 +257,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "874be4a7020b4fe681384a50da697d88"
@@ -458,7 +451,9 @@
     },
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"0ca4d3d3f049a4249a3136f535b8338f\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [],
-    "m_PropertyIds": []
+    "m_PropertyIds": [],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -489,6 +484,8 @@
     "m_DefaultReferenceName": "Brillo_intensitat",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -533,7 +530,7 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "LLumAmbiental",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -596,6 +593,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "52dfa207691f43489dd18e8bc33462f2",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "9913eb32d6fe4f1eb9450d4e8c1c808f"
+        },
+        {
+            "m_Id": "84df1f1328bf47f6bfca085a94c3b86e"
+        },
+        {
+            "m_Id": "2e015b830f6c4eff941950a21b0bb9e2"
+        },
+        {
+            "m_Id": "ff9737ef6e3d4512b321f7031ee9a1a9"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "55c17bb12f6e477bb00e9cedb09448d8",
     "m_Id": 1,
@@ -630,10 +648,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 433.0,
-            "y": -215.00003051757813,
-            "width": 154.0,
-            "height": 34.000003814697269
+            "x": 370.0,
+            "y": -213.00001525878907,
+            "width": 153.0,
+            "height": 34.00001525878906
         }
     },
     "m_Slots": [
@@ -697,7 +715,9 @@
     "m_PropertyIds": [
         282066811,
         -1360243965
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -772,9 +792,6 @@
             "m_Id": "a41e8f0ac4bd4425bd06288c25cb140e"
         },
         {
-            "m_Id": "dfb91516629f4c6aac3788043ce68eae"
-        },
-        {
             "m_Id": "44126eca1a0049c59967a0ea6e5b69d1"
         }
     ],
@@ -793,7 +810,9 @@
     "m_PropertyIds": [
         546406299,
         -1847087520
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -834,6 +853,8 @@
     "m_DefaultReferenceName": "Sombres_pintedes",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -844,6 +865,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -943,6 +965,8 @@
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -953,6 +977,7 @@
         "b": 0.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -990,7 +1015,7 @@
     "m_SlotType": 0,
     "m_Hidden": false,
     "m_ShaderOutputName": "_Color",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": {
         "x": 1.0,
         "y": 1.0,
@@ -1151,9 +1176,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 626.0,
-            "y": -232.0,
-            "width": 193.0,
+            "x": 563.0,
+            "y": -230.00001525878907,
+            "width": 193.00006103515626,
             "height": 94.0
         }
     },
@@ -1178,7 +1203,9 @@
     ],
     "m_PropertyIds": [
         619094627
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1220,7 +1247,9 @@
     ],
     "m_PropertyIds": [
         -595729656
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1307,31 +1336,6 @@
     "m_StageCapability": 2,
     "m_Value": 1.0,
     "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "dfb91516629f4c6aac3788043ce68eae",
-    "m_Id": -1847087520,
-    "m_DisplayName": "Sombres pintades",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Sombres_pintades",
-    "m_StageCapability": 2,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
     "m_Labels": []
 }
 
@@ -1472,6 +1476,8 @@
     "m_DefaultReferenceName": "Brillo_tamany",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 2,
