@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "27c83beb1b204f5e90b1509bc71a9d09",
     "m_Properties": [
@@ -11,6 +11,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "e7f4fb3492424795be63b75a3cd64d35"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "209ee096f9e14a4c8196b134a600e122"
@@ -192,10 +198,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Shader Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -510,6 +517,8 @@
     "m_DefaultReferenceName": "Vector1_56D0913D",
     "m_OverrideReferenceName": "_Radi",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -725,6 +734,8 @@
     "m_DefaultReferenceName": "Vector3_DC705741",
     "m_OverrideReferenceName": "_Posicio",
     "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": true,
     "hlslDeclarationOverride": 1,
@@ -874,17 +885,23 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget",
     "m_ObjectId": "8d34ec2b78b0425590b24b03f30a9858",
     "m_ActiveSubTarget": {
         "m_Id": "19d53266354e46a7803bbb2002d2d868"
     },
+    "m_AllowMaterialOverride": false,
     "m_SurfaceType": 0,
+    "m_ZTestMode": 4,
+    "m_ZWriteControl": 0,
     "m_AlphaMode": 3,
-    "m_TwoSided": true,
+    "m_RenderFace": 0,
     "m_AlphaClip": true,
-    "m_CustomEditorGUI": ""
+    "m_CastShadows": true,
+    "m_ReceiveShadows": true,
+    "m_CustomEditorGUI": "",
+    "m_SupportVFX": false
 }
 
 {
@@ -1184,6 +1201,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "e7f4fb3492424795be63b75a3cd64d35",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "63be539b51f5fb8aa0f9ac771c640b10"
+        },
+        {
+            "m_Id": "3f787cd2c1fdfd88a94ca22b9bcb6cb8"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
     "m_ObjectId": "eadc22588f7a4f758c40f59933bf9cdc",
     "m_Group": {
@@ -1231,7 +1263,9 @@
         1528292152,
         1086915584,
         -524965682
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {

@@ -14,7 +14,7 @@ using UnityEngine;
         public MeshRenderer meshRenderer;
 
         [Range(0, 31)] public int horizontalStackSize = 20;
-        [Range(0.01f, 20)] public float altura;
+        [Range(0.01f, 20)] public float altura = 3;
         public bool sombra;
 
         //float offset;

@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4654117142700840919
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: XS_EntornInclinacions
+  m_Shader: {fileID: -6465566751694194690, guid: e6a4209b21647cb4987bf297874f942f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _C1_2_Heigh:
+        m_Texture: {fileID: 2800000, guid: 0627dfa9d9fd05241965f03b5cc5c587, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_HOR:
+        m_Texture: {fileID: 2800000, guid: c111622df8006e44d97b5bbec37d9761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_N:
+        m_Texture: {fileID: 2800000, guid: 2508071f2ee97c643a51c56868d535af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_Normal:
+        m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_RGB:
+        m_Texture: {fileID: 2800000, guid: 49b2fc5be7dc7584badee8e39c0f78e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C1_Texture:
+        m_Texture: {fileID: 2800000, guid: 3386747ebb896b2489bafba823393f49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_3_Heigh:
+        m_Texture: {fileID: 2800000, guid: c111622df8006e44d97b5bbec37d9761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_HOR:
+        m_Texture: {fileID: 2800000, guid: eac0c9dfdffee4d4a9b68a0d9adf0fc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_N:
+        m_Texture: {fileID: 2800000, guid: f260f4e7aed72184e8282c75ce1209b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Normal:
+        m_Texture: {fileID: 2800000, guid: 2508071f2ee97c643a51c56868d535af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_RGB:
+        m_Texture: {fileID: 2800000, guid: b38731e7ac2bf4648b914e2b877ff3ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C2_Texture:
+        m_Texture: {fileID: 2800000, guid: 49b2fc5be7dc7584badee8e39c0f78e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Ambient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_HOR:
+        m_Texture: {fileID: 2800000, guid: 0627dfa9d9fd05241965f03b5cc5c587, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_N:
+        m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Normal:
+        m_Texture: {fileID: 2800000, guid: f260f4e7aed72184e8282c75ce1209b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_RGB:
+        m_Texture: {fileID: 2800000, guid: 3386747ebb896b2489bafba823393f49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _C3_Texture:
+        m_Texture: {fileID: 2800000, guid: b38731e7ac2bf4648b914e2b877ff3ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 59c089843487bfc4ebd3e2836e055490, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_be41e7fbdd5d4290857e12474cd7a922_Texture_1:
+        m_Texture: {fileID: 2800000, guid: c70272de163c6184385ce44871daed7b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 3386747ebb896b2489bafba823393f49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_Array:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UtilMixingColors_6e07c67a61a2413dbbc7f848c2502af2_Height_292428113:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UtilMixingColors_c3b7e4afad2d4862ada1c69dc2d49233_Height_292428113:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _C1_Invertit: 1
+    - _C2_Invertit: 0
+    - _Float: 0.04
+    - _Float_1: -21.61
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smooth: 0.2
+    m_Colors:
+    - _Brillo_Int_Siz_UI_X_Y: {r: 0, g: 0, b: 0, a: 0}
+    - _C1_Tint: {r: 0.8301887, g: 0.7649377, b: 0.5991456, a: 0}
+    - _C1_UV: {r: 5, g: 5, b: 0, a: 0}
+    - _C1_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.3, g: 1.04, b: 1, a: 1}
+    - _C2_Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _C2_UV: {r: 1, g: 1, b: 0, a: 0}
+    - _C2_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _C3_Tint: {r: 0.8396226, g: 0.71979254, b: 0.5663492, a: 0}
+    - _C3_UV: {r: 5, g: 5, b: 0, a: 0}
+    - _C3_X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 0.5, g: 1, b: 1, a: 1}
+    - _Intensitat_Tamany: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _X_B_Pow_Y_B_Siz_Z_UI_X_W_UI_Y: {r: 1, g: 0.5, b: 0.5, a: 0.5}
+  m_BuildTextureStacks: []

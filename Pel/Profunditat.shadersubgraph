@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "1b0aafb01c314080a5fe455968490d0f",
     "m_Properties": [
@@ -11,6 +11,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "c1482698dea5426d88e41353d3630795"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "b104f058935e4a81be774fd03777df90"
@@ -72,10 +78,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "b104f058935e4a81be774fd03777df90"
@@ -131,6 +138,8 @@
     "m_DefaultReferenceName": "Capa",
     "m_OverrideReferenceName": "_capa",
     "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -141,6 +150,7 @@
         "b": 0.9764150977134705,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -197,6 +207,8 @@
     "m_DefaultReferenceName": "_offset",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -268,6 +280,21 @@
         "m_SerializableColors": []
     },
     "IsFirstSlotValid": true
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "c1482698dea5426d88e41353d3630795",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "109f8e28f38447a7a9738510d3b54274"
+        },
+        {
+            "m_Id": "7e300c8c8eb6489698a4caf02bfdb390"
+        }
+    ]
 }
 
 {

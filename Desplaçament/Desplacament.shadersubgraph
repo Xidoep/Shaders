@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "a4ac8e957bec43b6a34acf44c543e570",
     "m_Properties": [
@@ -14,6 +14,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "e97bb6a4e016484f91b65a8b07f0f516"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "3f63d3b0c59f4d0eaaaa259c966cdb41"
@@ -194,10 +200,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "3f63d3b0c59f4d0eaaaa259c966cdb41"
@@ -242,6 +249,8 @@
     "m_DefaultReferenceName": "posicio",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -282,6 +291,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "142634a653b74250b5a04ed2297b5507",
+    "m_Id": 1148070946,
+    "m_DisplayName": "Radi accio",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Radi_accio",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.PositionNode",
     "m_ObjectId": "1610339f00a34e2aa5f0f5869d6fb99a",
@@ -311,7 +335,8 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_Space": 0
+    "m_Space": 0,
+    "m_PositionSource": 0
 }
 
 {
@@ -551,6 +576,9 @@
             "m_Id": "5fc52058c29142958a84bdfae0f16b81"
         },
         {
+            "m_Id": "142634a653b74250b5a04ed2297b5507"
+        },
+        {
             "m_Id": "34cf663a37b948a0ab4d1cc68d5fa55e"
         }
     ],
@@ -564,12 +592,16 @@
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"868a53a515b89c2439804af73f18ccf1\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [
         "076674b3-2d96-416c-9b13-0c9bc0ea7b1f",
-        "a3701410-a249-4c54-b103-a9922363adca"
+        "a3701410-a249-4c54-b103-a9922363adca",
+        "785454ca-dea6-4fbf-bc57-a25af2f12729"
     ],
     "m_PropertyIds": [
         653276608,
-        -1472636786
-    ]
+        -1472636786,
+        1148070946
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -679,6 +711,8 @@
     "m_DefaultReferenceName": "Radi",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -766,6 +800,8 @@
     "m_DefaultReferenceName": "Vector3",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -822,7 +858,9 @@
     "m_PropertyIds": [
         -1962431167,
         383160140
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1076,6 +1114,24 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "e97bb6a4e016484f91b65a8b07f0f516",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "0ef0ebe9451444fb8e933bbdf8ebf90f"
+        },
+        {
+            "m_Id": "61bb374a486d4c33bcf2c3b1e525f68a"
+        },
+        {
+            "m_Id": "719306f749cf47c98eb1e5c716b6690c"
+        }
+    ]
 }
 
 {
