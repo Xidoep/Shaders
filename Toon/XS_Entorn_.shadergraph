@@ -14,6 +14,9 @@
         },
         {
             "m_Id": "97744f595e8d4331b87bb6c555bf9fb9"
+        },
+        {
+            "m_Id": "4221d8922a4b4d74880b770451e8bb41"
         }
     ],
     "m_Keywords": [],
@@ -68,6 +71,9 @@
         },
         {
             "m_Id": "5ece9390533d4a848d2c77b2bc35fee3"
+        },
+        {
+            "m_Id": "1622a32552c44ab5bde3e5b99ba9423c"
         }
     ],
     "m_GroupDatas": [],
@@ -85,6 +91,20 @@
                     "m_Id": "5ece9390533d4a848d2c77b2bc35fee3"
                 },
                 "m_SlotId": -660782611
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "1622a32552c44ab5bde3e5b99ba9423c"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "5ece9390533d4a848d2c77b2bc35fee3"
+                },
+                "m_SlotId": 1423976075
             }
         },
         {
@@ -361,6 +381,41 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "1622a32552c44ab5bde3e5b99ba9423c",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -580.0,
+            "y": -282.9999694824219,
+            "width": 104.0,
+            "height": 33.999969482421878
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "2d16da11433d4fdea85c863d3b3ccd5c"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "4221d8922a4b4d74880b770451e8bb41"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "1b8c70a71b4545c0b61f990d36b102e0",
     "m_Group": {
         "m_Id": ""
@@ -441,6 +496,21 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Metallic",
     "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "2d16da11433d4fdea85c863d3b3ccd5c",
+    "m_Id": 0,
+    "m_DisplayName": "Hight",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -532,6 +602,33 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "4221d8922a4b4d74880b770451e8bb41",
+    "m_Guid": {
+        "m_GuidSerialized": "bb7f198e-7114-46af-b509-9db7d6350066"
+    },
+    "m_Name": "Hight",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Hight",
+    "m_DefaultReferenceName": "_Hight",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 1,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 10.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "451d89d42315481ab37035ef7c5b5859",
@@ -601,6 +698,9 @@
         },
         {
             "m_Id": "b523b811bcdc4ba1adf001264836f362"
+        },
+        {
+            "m_Id": "4221d8922a4b4d74880b770451e8bb41"
         }
     ]
 }
@@ -647,7 +747,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "XS_Objecte_Textures",
+    "m_Name": "XS_Entorn_Textures",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -672,6 +772,9 @@
             "m_Id": "672ebdb378f34b72b33a8e83d0274c50"
         },
         {
+            "m_Id": "946e4183fcf340ef8ddee070ee148ea0"
+        },
+        {
             "m_Id": "292281e86298415bad57b58596c5a9d9"
         }
     ],
@@ -687,13 +790,15 @@
         "728cf248-9469-4d8f-906b-7f4d84b94011",
         "437d3fba-63e0-4550-a917-0e3aed3a7565",
         "aa342b4c-2a65-4f4d-b80b-58f97c4bbcc4",
-        "f9eaf9d8-23fc-425d-8276-937c4a29391a"
+        "f9eaf9d8-23fc-425d-8276-937c4a29391a",
+        "bdf0af8a-3e44-42e5-88b9-9c6bcd0e69c0"
     ],
     "m_PropertyIds": [
         1664922677,
         1498837278,
         -660782611,
-        -585267732
+        -585267732,
+        1423976075
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -860,6 +965,21 @@
         "m_Guid": ""
     },
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "946e4183fcf340ef8ddee070ee148ea0",
+    "m_Id": 1423976075,
+    "m_DisplayName": "Hight",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Hight",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {

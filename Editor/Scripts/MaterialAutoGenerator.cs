@@ -8,10 +8,16 @@ public class MaterialAutoGenerator
     const string RGB = "_RGB";
     const string RGBA = "_RGBA";
     const string N = "_N";
+    const string NE = "_NE";
     const string HOR = "_HOR";
+    const string HORM = "_HORM";
+    const string HORE = "_HORE";
+    const string RGBE = "_RGBE";
+
     const string M = "_M";
     const string E = "_E";
     const string ME = "_ME";
+
     const string XS_OBJECTE = "Shader Graphs/XS_Objecte";
     const string XS_ENTORN = "Shader Graphs/XS_Entorn";
 
@@ -57,7 +63,7 @@ public class MaterialAutoGenerator
         string path = AssetDatabase.GetAssetPath(Selection.activeObject);
         string selectedObject = Selection.activeObject.name;
         string folder = path.Split(selectedObject)[0];
-        string name = selectedObject.Split('_')[0];
+        string name = $"_{selectedObject.Split('_')[1]}";
 
         //Check if there is an already created material in the folder with the same name and delete it if needded. 
         object alreadyCreated = AssetDatabase.LoadAssetAtPath($"{folder}{name}.asset", typeof(object));
@@ -85,14 +91,42 @@ public class MaterialAutoGenerator
 
         string nJPG = $"{folder}{name}{N}.jpg";
         string nPNG = $"{folder}{name}{N}.png";
+        string nTIF = $"{folder}{name}{N}.tif";
         Texture2D n = AssetDatabase.LoadAssetAtPath<Texture2D>(nJPG);
         if (n == null) n = AssetDatabase.LoadAssetAtPath<Texture2D>(nPNG);
+        if (n == null) n = AssetDatabase.LoadAssetAtPath<Texture2D>(nTIF);
 
         string horJPG = $"{folder}{name}{HOR}.jpg";
         string horPNG = $"{folder}{name}{HOR}.png";
+        string horTIF = $"{folder}{name}{HOR}.tif";
         Texture2D hor = AssetDatabase.LoadAssetAtPath<Texture2D>(horJPG);
         if (hor == null) hor = AssetDatabase.LoadAssetAtPath<Texture2D>(horPNG);
+        if (hor == null) hor = AssetDatabase.LoadAssetAtPath<Texture2D>(horTIF);
 
+
+
+
+        string hormJPG = $"{folder}{name}{HORM}.jpg";
+        string hormPNG = $"{folder}{name}{HORM}.png";
+        string hormTIF = $"{folder}{name}{HORM}.tif";
+        Texture2D horm = AssetDatabase.LoadAssetAtPath<Texture2D>(hormJPG);
+        if (horm == null) horm = AssetDatabase.LoadAssetAtPath<Texture2D>(hormPNG);
+        if (horm == null) horm = AssetDatabase.LoadAssetAtPath<Texture2D>(hormTIF);
+
+        string horeJPG = $"{folder}{name}{HORE}.jpg";
+        string horePNG = $"{folder}{name}{HORE}.png";
+        string horeTIF = $"{folder}{name}{HORE}.tif";
+        Texture2D hore = AssetDatabase.LoadAssetAtPath<Texture2D>(horeJPG);
+        if (hore == null) hore = AssetDatabase.LoadAssetAtPath<Texture2D>(horePNG);
+        if (hore == null) hore = AssetDatabase.LoadAssetAtPath<Texture2D>(horeTIF);
+
+        string neJPG = $"{folder}{name}{NE}.jpg";
+        string nePNG = $"{folder}{name}{NE}.png";
+        string neTIF = $"{folder}{name}{NE}.tif";
+        Texture2D ne = AssetDatabase.LoadAssetAtPath<Texture2D>(neJPG);
+        if (ne == null) ne = AssetDatabase.LoadAssetAtPath<Texture2D>(nePNG);
+        if (ne == null) ne = AssetDatabase.LoadAssetAtPath<Texture2D>(neTIF);
+        /*
         string mJPG = $"{folder}{name}{M}.jpg";
         string mPNG = $"{folder}{name}{M}.png";
         Texture2D m = AssetDatabase.LoadAssetAtPath<Texture2D>(mJPG);
@@ -107,10 +141,10 @@ public class MaterialAutoGenerator
         string mePNG = $"{folder}{name}{ME}.png";
         Texture2D me = AssetDatabase.LoadAssetAtPath<Texture2D>(meJPG);
         if (me == null) me = AssetDatabase.LoadAssetAtPath<Texture2D>(mePNG);
-
+        */
 
         //Analize wicth textures found
-        if (rgb != null & rgba == null & n != null & hor != null & m == null & e == null & me == null) toonSelected = Toon._;
+        /*if (rgb != null & rgba == null & n != null & hor != null & m == null & e == null & me == null) toonSelected = Toon._;
         else if (rgb == null & rgba != null & n != null & hor != null & m == null & e == null & me == null) toonSelected = Toon.Alpha;
         else if (rgb != null & rgba == null & n != null & hor != null & m == null & e != null & me == null) toonSelected = Toon.Emision;
         else if (rgb == null & rgba != null & n != null & hor != null & m == null & e != null & me == null) toonSelected = Toon.EmisionAlpha;
@@ -122,11 +156,27 @@ public class MaterialAutoGenerator
         else if (rgb == null & rgba != null & n == null & hor == null & m == null & e == null & me == null) toonSelected = Toon.SimpleAlpha;
         else if (rgb != null & rgba == null & n != null & hor == null & m == null & e == null & me == null) toonSelected = Toon.SimpleNormal;
         else if (rgb == null & rgba != null & n != null & hor == null & m == null & e == null & me == null) toonSelected = Toon.SimpleNormalAlpha;
+        */
+
+        if      (rgb != null & rgba == null & n != null & hor != null & horm == null & hore == null & ne == null) toonSelected = Toon._;
+        else if (rgb == null & rgba != null & n != null & hor != null & horm == null & hore == null & ne == null) toonSelected = Toon.Alpha;
+        else if (rgb != null & rgba == null & n != null & hor == null & horm == null & hore != null & ne == null) toonSelected = Toon.Emision;
+        else if (rgb == null & rgba != null & n != null & hor == null & horm == null & hore != null & ne == null) toonSelected = Toon.EmisionAlpha;
+        else if (rgb != null & rgba == null & n != null & hor == null & horm != null & hore == null & ne == null) toonSelected = Toon.Metal;
+        else if (rgb == null & rgba != null & n != null & hor == null & horm != null & hore == null & ne == null) toonSelected = Toon.MetalAlpha;
+        else if (rgb != null & rgba == null & n != null & hor == null & horm != null & hore == null & ne != null) toonSelected = Toon.MetalEmision;
+        else if (rgb == null & rgba != null & n != null & hor == null & horm != null & hore == null & ne != null) toonSelected = Toon.MetalEmisionAlpha;
+        else if (rgb != null & rgba == null & n == null & hor == null & horm == null & hore == null & ne == null) toonSelected = Toon.Simple;
+        else if (rgb == null & rgba != null & n == null & hor == null & horm == null & hore == null & ne == null) toonSelected = Toon.SimpleAlpha;
+        else if (rgb != null & rgba == null & n != null & hor == null & horm == null & hore == null & ne == null) toonSelected = Toon.SimpleNormal;
+        else if (rgb == null & rgba != null & n != null & hor == null & horm == null & hore == null & ne == null) toonSelected = Toon.SimpleNormalAlpha;
 
 
         //Fill up the objects textures
         string tipus = objecte ? XS_OBJECTE : XS_ENTORN;
         Material material = new Material(Shader.Find($"{tipus}{toonSelected}"));
+
+        Debugar.Log(toonSelected.ToString());
         switch (toonSelected)
         {
             case Toon._:
@@ -142,38 +192,32 @@ public class MaterialAutoGenerator
             case Toon.Emision:
                 material.SetTexture(RGB, rgb);
                 material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(E, e);
+                material.SetTexture(HORE, hore);
                 break;
             case Toon.EmisionAlpha:
                 material.SetTexture(RGBA, rgba);
                 material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(E, e);
+                material.SetTexture(HORE, hore);
                 break;
             case Toon.Metal:
                 material.SetTexture(RGB, rgb);
                 material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(M, m);
+                material.SetTexture(HORM, horm);
                 break;
             case Toon.MetalAlpha:
                 material.SetTexture(RGBA, rgba);
                 material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(M, m);
+                material.SetTexture(HORM, horm);
                 break;
             case Toon.MetalEmision:
                 material.SetTexture(RGB, rgb);
-                material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(ME, me);
+                material.SetTexture(NE, ne);
+                material.SetTexture(HORM, horm);
                 break;
             case Toon.MetalEmisionAlpha:
                 material.SetTexture(RGBA, rgba);
-                material.SetTexture(N, n);
-                material.SetTexture(HOR, hor);
-                material.SetTexture(ME, me);
+                material.SetTexture(NE, ne);
+                material.SetTexture(HORM, horm);
                 break;
             case Toon.Simple:
                 material.SetTexture(RGB, rgb);
