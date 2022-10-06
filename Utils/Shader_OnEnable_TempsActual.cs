@@ -8,6 +8,6 @@ public class Shader_OnEnable_TempsActual : MonoBehaviour
     [SerializeField] Image image;
     private void OnEnable()
     {
-        image.material.SetFloat("TempsActual", Time.time);
+        image.material.SetFloat("_TempsActual", Time.time);
     }
 }
