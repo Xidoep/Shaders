@@ -38,6 +38,9 @@
         },
         {
             "m_Id": "403b5c4da47f40729b3fdfc5f3bb0534"
+        },
+        {
+            "m_Id": "cb3052cd3e1a400cab50a68e8d866a81"
         }
     ],
     "m_GroupDatas": [],
@@ -106,9 +109,9 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "7c4ac34ecbfd451188b96f8eb9de93b0"
+                    "m_Id": "cb3052cd3e1a400cab50a68e8d866a81"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -519,6 +522,29 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "5cb0d12060134a94a5328025034429c7",
+    "m_Id": 1,
+    "m_DisplayName": "Out_Vector3",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "OutVector3",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "5d5adeed5b6441c4aca0e4f898ce6b94",
     "m_Id": 1,
     "m_DisplayName": "Altura",
@@ -604,10 +630,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -375.9999084472656,
-            "y": 132.00001525878907,
-            "width": 206.0,
-            "height": 131.99998474121095
+            "x": -391.0,
+            "y": 164.00003051757813,
+            "width": 206.0000457763672,
+            "height": 130.99993896484376
         }
     },
     "m_Slots": [
@@ -902,6 +928,43 @@
         "m_SerializableColors": []
     },
     "IsFirstSlotValid": true
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
+    "m_ObjectId": "cb3052cd3e1a400cab50a68e8d866a81",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "IrregularitatGeografiques",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -521.0,
+            "y": 324.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "5cb0d12060134a94a5328025034429c7"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"ce6af86e0c770504daca1fb235f3fc78\",\n        \"type\": 3\n    }\n}",
+    "m_PropertyGuids": [],
+    "m_PropertyIds": [],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
