@@ -42,6 +42,7 @@ public class Pel : MonoBehaviour
 
     void LateUpdate()
     {
+        return;
         matrix[0] = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
 
         for (int i = 0; i < horizontalStackSize; i++)
