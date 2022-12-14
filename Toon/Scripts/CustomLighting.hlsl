@@ -141,9 +141,10 @@ void MixFog_float (float3 Colour, float Fog, out float3 Out){
 - For a PBR/Lit Graph, these keywords are already handled for you.
 */
 void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosition, float3 WorldNormal, float3 WorldView,
-							out float3 Diffuse, out float3 Specular) {
+							out float3 Diffuse, out float3 Specular, out float Intensity) {
    float3 diffuseColor = 0;
    float3 specularColor = 0;
+   float intensity = 0;
 
 #ifndef SHADERGRAPH_PREVIEW
    Smoothness = exp2(10 * Smoothness + 1);
@@ -170,11 +171,13 @@ void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosi
        float3 attenuatedLightColor = light.color * (light.distanceAttenuation * light.shadowAttenuation);
        diffuseColor += LightingLambert(attenuatedLightColor, light.direction, WorldNormal);
        specularColor += LightingSpecular(attenuatedLightColor, light.direction, WorldNormal, WorldView, float4(SpecColor, 0), Smoothness);
+	   intensity = (light.distanceAttenuation * light.shadowAttenuation) * 0.01;
    }
 #endif
 
    Diffuse = diffuseColor;
    Specular = specularColor;
+   Intensity = intensity;
 }
 
 //------------------------------------------------------------------------------------------------------
