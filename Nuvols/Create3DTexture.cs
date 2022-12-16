@@ -10,51 +10,81 @@ public class Create3DTexture : MonoBehaviour
     static void CreateTexture3D()
     {
         // Configure the texture
-        int size = 32;
+        int width = 128;
+        int height = 128;
+        int depth = 128;
+        float scale = 0.012f;
         TextureFormat format = TextureFormat.RGBA32;
         TextureWrapMode wrapMode = TextureWrapMode.Repeat;
 
-        Texture2D noise = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/XidoStudio/Shaders/Utils/noiseTexture (1).png");
-        // Create the texture and apply the configuration
-        Texture3D texture = new Texture3D(size, size, size, format, false);
+        Texture3D texture = new Texture3D(width, height, depth, format, false);
         texture.wrapMode = wrapMode;
 
-        // Create a 3-dimensional array to store color data
-        Color[] colors = new Color[size * size * size];
-        string debug = "";
 
-        // Populate the array so that the x, y, and z values of the texture will map to red, blue, and green colors
-        float inverseResolution = 1.0f / (size - 1.0f);
-        for (int z = 0; z < size; z++)
+
+
+
+
+
+
+
+        // Create a color array to store the 3D noise values
+        Color[] colors = new Color[width * height * depth];
+
+        // Generate the 3D noise values
+        for (int x = 0; x < width; x++)
         {
-            int zOffset = z * size * size;
-            for (int y = 0; y < size; y++)
+            for (int y = 0; y < height; y++)
             {
-                int yOffset = y * size;
-                for (int x = 0; x < size; x++)
+                for (int z = 0; z < depth; z++)
                 {
-                    //colors[x + yOffset + zOffset] = new Color(x * inverseResolution, y * inverseResolution, z * inverseResolution, 1.0f);
-                    //colors[x + yOffset + zOffset] = new Color((x + y + z) * (inverseResolution / 3f), 0, 0, 1.0f);
-                    //colors[x + yOffset + zOffset] = (Color.white - (Color.white * 0.5f)) * ((x + y + z) * (inverseResolution / 3f));
-                    //colors[x + yOffset + zOffset] = (Color.white * -0.5f) + (Color.white * ((x + y + z) * (inverseResolution / 3f))) * 2f;
-                    //colors[x + yOffset + zOffset] = new Color( -1f + (((x + y + z) * (inverseResolution / 3f))) * 2f,0,0,1);
-                    //debug += new Vector2Int(x + z, y + z).ToString() + "\n";
-                    float color = -1f + noise.GetPixel(x + z, y).r * 2;
-                    colors[x + yOffset + zOffset] = new Color(color, 0,0, color);
+
+                    // Warp the noise values using a sine function
+                    float noiseValue = PerlinNoise3D(x * scale * 1, y * scale * 1, z * scale * 1) + 0.2f;
+                    float noiseValue2 = PerlinNoise3D(x * scale * 2, y * scale * 2, z * scale * 2) - 0.16f;
+                    float noiseValue3 = PerlinNoise3D(x * scale * 3, y * scale * 3, z * scale * 3) - 0.16f;
+                    float noiseValue4 = PerlinNoise3D(x * scale * 4, y * scale * 4, z * scale * 4) - 0.16f;
+                    float noiseValue5 = PerlinNoise3D(x * scale * 5, y * scale * 5, z * scale * 5) - 0.16f;
+
+                    float maxim = Mathf.Clamp(Mathf.Min(((y * 5) / (float)height) -1, (((height - y) * 5) / (float)height)) -1, 0, 3);
+                    float noise = (noiseValue - noiseValue2 - noiseValue3 - noiseValue4 - noiseValue5) * maxim;
+
+                    colors[x + y * width + z * width * height] = (new Color(noise, noise, noise, noise) * 5) - (Color.white * 0.1f);
                 }
             }
         }
-        Debug.Log(debug);
 
-        // Copy the color values to the texture
+        // Set the texture data
         texture.SetPixels(colors);
-
-        // Apply the changes to the texture and upload the updated texture to the GPU
         texture.Apply();
+
+
+
+
+
 
         // Save the texture to your Unity Project
         AssetDatabase.DeleteAsset("Assets/XidoStudio/Shaders/Nuvols/Example3DTexture.asset");
         AssetDatabase.CreateAsset(texture, "Assets/XidoStudio/Shaders/Nuvols/Example3DTexture.asset");
+    }
+
+    static float PerlinNoise3D(float x, float y, float z)
+    {
+        y += 1;
+        z += 2;
+        float xy = _perlin3DFixed(x, y);
+        float xz = _perlin3DFixed(x, z);
+        float yz = _perlin3DFixed(y, z);
+        float yx = _perlin3DFixed(y, x);
+        float zx = _perlin3DFixed(z, x);
+        float zy = _perlin3DFixed(z, y);
+        return xy * xz * yz * yx * zx * zy;
+    }
+    static float _perlin3DFixed(float a, float b)
+    {
+        return Mathf.Sin(Mathf.PI * Mathf.PerlinNoise(a, b));
+        //return Mathf.PI * Mathf.PerlinNoise(a, b);
+        //return Mathf.PerlinNoise(a, b);
     }
 }
 #endif

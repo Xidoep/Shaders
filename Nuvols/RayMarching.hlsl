@@ -79,7 +79,7 @@ void Raymarch3DTextureLight_float(
 	for(int i = 0; i < numSteps; i++){
 		rayOrigin += (rayDirection*stepSize);
 
-		float3 samplePos = rayOrigin + offset;
+		float3 samplePos = rayOrigin * .1 + offset;
 
 		float sampledDensity = tex3D(Volume, samplePos).r;
 		density += sampledDensity*densityScale;
@@ -102,4 +102,3 @@ void Raymarch3DTextureLight_float(
 
 	output = float3(finalLight, transmission, transmittance);
 }
-
