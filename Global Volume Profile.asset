@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 2
@@ -211,7 +211,7 @@ MonoBehaviour:
   master:
     m_OverrideState: 1
     m_Value:
-      <length>k__BackingField: 3
+      <length>k__BackingField: 4
       m_Loop: 0
       m_ZeroValue: 0
       m_Range: 1
@@ -221,6 +221,15 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
+          inSlope: 0.36491212
+          outSlope: 0.36491212
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.4587912
+          value: 0.5146199
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -228,10 +237,10 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.328125
-          value: 0.6752137
-          inSlope: 1
-          outSlope: 1
+          time: 0.83516484
+          value: 0.73099416
+          inSlope: 1.0149908
+          outSlope: 1.0149908
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
@@ -436,7 +445,7 @@ MonoBehaviour:
   active: 0
   texture:
     m_OverrideState: 1
-    m_Value: {fileID: 2800000, guid: a5844da0df431dd4498e5760b4c0108d, type: 3}
+    m_Value: {fileID: 2800000, guid: dd105a0bede7ea54fb520a498ecdd2ac, type: 3}
   contribution:
     m_OverrideState: 1
     m_Value: 1
@@ -455,10 +464,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.80544674, g: 0.87239283, b: 0.9433962, a: 1}
+    m_Value: {r: 0.69166076, g: 0.8021218, b: 0.9339623, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.6603774, g: 0.60586566, b: 0.43921328, a: 1}
+    m_Value: {r: 0.7924528, g: 0.7167586, b: 0.48967603, a: 1}
   balance:
     m_OverrideState: 1
     m_Value: 0
