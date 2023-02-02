@@ -147,7 +147,8 @@ void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosi
    float intensity = 0;
 
 #ifndef SHADERGRAPH_PREVIEW
-   Smoothness = exp2(10 * Smoothness + 1);
+   //Smoothness = exp2(10 * Smoothness + 1);
+   Smoothness = 0;
    WorldNormal = normalize(WorldNormal);
    WorldView = SafeNormalize(WorldView);
    int pixelLightCount = GetAdditionalLightsCount();
@@ -168,7 +169,7 @@ void AdditionalLights_float(float3 SpecColor, float Smoothness, float3 WorldPosi
 			Light light = GetAdditionalLight(i, WorldPosition);
 		#endif
 
-       float3 attenuatedLightColor = light.color * (light.distanceAttenuation * light.shadowAttenuation);
+       float3 attenuatedLightColor = light.color * ((light.distanceAttenuation) * light.shadowAttenuation) * 0.01;
        diffuseColor += LightingLambert(attenuatedLightColor, light.direction, WorldNormal);
        specularColor += LightingSpecular(attenuatedLightColor, light.direction, WorldNormal, WorldView, float4(SpecColor, 0), Smoothness);
 	   intensity = (light.distanceAttenuation * light.shadowAttenuation) * 0.01;
@@ -318,5 +319,9 @@ void MainLightFullAlternative_float (float3 WorldPos, out float3 Direction, out 
 		// see the SampleShadowmap function in URP's ShaderLibrary, Shadows.hlsl though
 	#endif
 }
+
+
+
+
 
 #endif // CUSTOM_LIGHTING_INCLUDED
